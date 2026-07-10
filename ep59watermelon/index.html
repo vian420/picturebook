@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>阿布的大西瓜｜一起說故事 EP59 繪者參考</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --pink:#EFDCDF;
+    --pink-deep:#E3C8CC;
+    --paper:#FFFDF8;
+    --ink:#33261F;
+    --abu:#C25B55;      /* 阿布・西瓜紅 */
+    --robot:#5E7A96;    /* AB750・科技藍灰 */
+    --kid:#4F8248;      /* 地球小朋友・西瓜綠 */
+    --line:#E7D8CB;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--pink);
+    color:var(--ink);
+    font-family:'Noto Sans TC',sans-serif;
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:28px 20px 60px;}
+
+  .cover{
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(51,38,31,.15);
+    border:6px solid var(--paper);
+  }
+  .cover img{display:block;width:100%;height:auto;}
+
+  header{margin:26px 0 8px;}
+  .eyebrow{
+    font-family:'LXGW WenKai TC',serif;
+    letter-spacing:.35em;
+    font-size:.85rem;
+    opacity:.65;
+  }
+  h1{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:2.1rem;
+    line-height:1.4;
+    margin-top:4px;
+  }
+  .meta{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:3px 14px;
+    font-size:.82rem;
+  }
+
+  .card{
+    background:var(--paper);
+    border-radius:16px;
+    padding:22px 22px;
+    margin-top:22px;
+    box-shadow:0 4px 14px rgba(51,38,31,.08);
+  }
+  .card h2{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1.25rem;
+    margin-bottom:12px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .card h2::before{
+    content:"";
+    width:14px;height:14px;
+    border-radius:50%;
+    background:var(--abu);
+    border:2px solid var(--ink);
+    flex:none;
+  }
+
+  audio{width:100%;margin-top:4px;}
+  .audio-note{font-size:.8rem;opacity:.6;margin-top:8px;}
+
+  .synopsis p{margin-bottom:1em;}
+  .synopsis p:last-child{margin-bottom:0;}
+
+  .chars{list-style:none;display:grid;gap:10px;}
+  .chars li{display:flex;gap:12px;align-items:baseline;}
+  .dot{
+    width:12px;height:12px;border-radius:50%;
+    flex:none;position:relative;top:1px;
+  }
+  .dot.abu{background:var(--abu);}
+  .dot.robot{background:var(--robot);}
+  .dot.kid{background:var(--kid);}
+  .chars b{font-family:'LXGW WenKai TC',serif;font-size:1.05rem;margin-right:6px;}
+
+  details{margin-top:22px;}
+  details summary{
+    list-style:none;
+    cursor:pointer;
+    background:var(--paper);
+    border-radius:16px;
+    padding:18px 22px;
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1.25rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:0 4px 14px rgba(51,38,31,.08);
+    user-select:none;
+  }
+  details summary::-webkit-details-marker{display:none;}
+  details summary .toggle{
+    font-family:'Noto Sans TC',sans-serif;
+    font-size:.8rem;
+    background:var(--pink-deep);
+    border-radius:999px;
+    padding:3px 12px;
+  }
+  details[open] summary{border-radius:16px 16px 0 0;}
+  details .script{
+    background:var(--paper);
+    border-top:1px dashed var(--line);
+    border-radius:0 0 16px 16px;
+    padding:24px 22px 28px;
+    box-shadow:0 4px 14px rgba(51,38,31,.08);
+    font-size:.95rem;
+  }
+  .script p{margin-bottom:1.1em;}
+  .script p.n{opacity:.85;}
+  .script .sp{
+    font-family:'LXGW WenKai TC',serif;
+    font-weight:700;
+    margin-right:.4em;
+    white-space:nowrap;
+  }
+  .sp.a{color:var(--abu);}
+  .sp.r{color:var(--robot);}
+  .sp.k{color:var(--kid);}
+
+  footer{
+    margin-top:40px;
+    text-align:center;
+    font-size:.8rem;
+    opacity:.6;
+    line-height:1.7;
+  }
+  footer .logo{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1rem;
+    letter-spacing:.2em;
+    opacity:.9;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="cover"><img src="cover.jpg" alt="阿布的大西瓜 封面：粉紅色背景上有一顆切開的巨大西瓜，小小的外星人阿布拿著湯匙在果肉裡挖隧道"></div>
+
+  <header>
+    <div class="eyebrow">一起說故事・繪者合作參考</div>
+    <h1>阿布的大西瓜</h1>
+    <div class="meta">
+      <span class="chip">EP59</span>
+      <span class="chip">廣播劇約 9 分鐘</span>
+      <span class="chip">改編自阿布投稿</span>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>廣播劇音檔</h2>
+    <audio controls preload="metadata" src="audio.mp3"></audio>
+    <p class="audio-note">完整版廣播劇，含配音與音效，供角色聲音表情參考。</p>
+  </section>
+
+  <section class="card synopsis">
+    <h2>故事大綱</h2>
+    <p>在遙遠的外太空，有一個很像地球的小星球，住著外星人小朋友阿布。他最愛用超大望遠鏡觀察宇宙，這天他看到地球上的小朋友在吃一種奇怪的食物：紅色的三角形、綠色的「把手」，還會吐出黑黑的東西——機器人助手 AB750 查了資料：那叫做西瓜。</p>
+    <p>「又甜又清爽，充滿瓜果的香氣」，光聽描述就讓阿布想到睡不著。凌晨三點，他決定動用一年只能使用一次的「宇宙高能量子傳輸器」把西瓜傳過來——偏偏按下按鈕的瞬間，地球小朋友「呸」地吐出一顆籽，傳到手上的只有一粒西瓜籽。</p>
+    <p>還好有籽就能種！阿布每天頂著大太陽照顧西瓜，卻一直納悶：怎麼只長綠色圓圓的，不長成紅色三角形？直到西瓜長到三層樓高，AB750 才查到「西瓜是圓形的，可以切成各種形狀食用」。阿布用電鋸在瓜皮上開了一扇門，一頭埋進紅色果肉裡——從此他吃出隧道、房間和西瓜汁游泳池，把床、書桌、望遠鏡通通搬進西瓜房子。故事的結尾，他從天窗用望遠鏡看到地球小朋友在吃黃黃軟軟的芒果……「我要吃芒果！！！」</p>
+  </section>
+
+  <section class="card">
+    <h2>登場角色</h2>
+    <ul class="chars">
+      <li><span class="dot abu"></span><span><b>阿布</b>主角，外星人小朋友。好奇心和行動力都爆表，為了一口沒吃過的西瓜可以熬夜、種田、開電鋸，吃到之後直接住進西瓜裡。</span></li>
+      <li><span class="dot robot"></span><span><b>AB750</b>阿布的機器人助手，什麼都查得到的行動百科。口頭禪「我查到的資料顯示——」，每次登場都推進劇情的關鍵一步。</span></li>
+      <li><span class="dot kid"></span><span><b>地球小朋友</b>只有一句台詞「呸～」，卻是全劇最大的轉折點。</span></li>
+    </ul>
+  </section>
+
+  <details>
+    <summary>完整劇本<span class="toggle">點擊展開</span></summary>
+    <div class="script">
+      <p class="n">哈囉，我們來一起說故事囉！今天要說的故事叫做《阿布的大西瓜》，改編自阿布提供的故事。</p>
+      <p class="n">在遙遠的外太空中，有一個很像地球的小星球，那個星球上住著一個外星人小朋友，他叫做阿布。阿布最喜歡用望遠鏡觀察外太空了，他的望遠鏡很大很大、很長很長，可以看到很遠很遠的地方，像是——</p>
+      <p><span class="sp a">阿布：</span>喔！地球！</p>
+      <p class="n">阿布今天用望遠鏡看到地球了。</p>
+      <p><span class="sp a">阿布：</span>聽說地球上面有很多人和動物，我想看清楚一點，AB750，請幫我放大畫面！</p>
+      <p><span class="sp r">AB750：</span>沒問題，立刻進行高解析化作業。</p>
+      <p class="n">AB750是阿布的機器人，他很聰明，知道所有的事情，是阿布的好幫手。</p>
+      <p><span class="sp r">AB750：</span>高解析化作業完成。</p>
+      <p><span class="sp a">阿布：</span>哇！！真的有好多小朋友耶！嗯？？他們在吃什麼？</p>
+      <p class="n">AB750幫忙放大畫面，阿布看到——</p>
+      <p><span class="sp a">阿布：</span>真奇怪的食物，紅色的三角形，下面有寬寬扁扁的綠色把手，拿著把手吃，是還滿方便的⋯⋯可是⋯⋯紅色的部分，有水流出來、滴到手上了啊！！等一下！！為什麼他吐出黑色的東西！！呃～～～</p>
+      <p class="n">阿布沒看過地球的食物，他非常緊張。AB750查到資料，告訴阿布</p>
+      <p><span class="sp r">AB750：</span>他們正在吃西瓜。</p>
+      <p><span class="sp a">阿布：</span>西瓜？</p>
+      <p><span class="sp r">AB750：</span>沒錯，西瓜。那是一種水果，是植物的果實，綠色的不是把手，是果皮，紅色的是果肉，黑黑的是種子。</p>
+      <p class="n">阿布的臉都皺起來了。</p>
+      <p><span class="sp a">阿布：</span>我覺得聽起來不是很好吃⋯⋯</p>
+      <p><span class="sp r">AB750：</span>我查到的資料顯示「西瓜甜甜的，充滿水份，夏天的時候最好吃。」</p>
+      <p><span class="sp a">阿布：</span>這樣啊⋯⋯</p>
+      <p class="n">那天晚上，阿布翻來翻去，就是睡不著。（阿布輾轉難眠聲）</p>
+      <p class="n">阿布只要把眼睛閉上，就會在頭腦裡面想起三角形的西瓜，紅紅的果肉、綠綠的果皮還有黑黑的種子。西瓜好像很好咬、很多汁，但是看起來又不像軟綿綿的東西，到底吃西瓜是什麼感覺呢⋯⋯</p>
+      <p><span class="sp a">阿布：</span>我好想吃西瓜！！！！</p>
+      <p class="n">阿布忍不住跳下床，把AB750吵醒了。</p>
+      <p><span class="sp r">AB750：</span>阿布早安⋯⋯不對，現在才凌晨三點，該說早安，還是晚安⋯⋯早安？晚安？</p>
+      <p class="n">（機器逼哩逼哩高科技運算的聲音）</p>
+      <p><span class="sp a">阿布：</span>那不重要，重點是，我好想吃西瓜！我想西瓜想到睡不著覺！西瓜到底是什麼味道？</p>
+      <p><span class="sp r">AB750：</span>我查到的資料顯示「西瓜充滿水份，又甜又清爽，充滿瓜果的香氣。」</p>
+      <p><span class="sp a">阿布：</span>清爽是什麼意思？瓜果的香氣又是什麼？我好想知道～～～</p>
+      <p><span class="sp r">AB750：</span>那就使用宇宙高能量子傳輸器吧！</p>
+      <p class="n">宇宙高能量子傳輸器是一種很厲害的機器，只要用機器瞄準想要的東西，那個東西就會從很遠很遠的地方傳送到阿布的手上。因為這個厲害的宇宙高能量子傳輸器會消耗非常多能源，所以一年只能用一次。</p>
+      <p><span class="sp a">阿布：</span>（天人交戰）嗯～～～～～好吧！就用宇宙高能量子傳輸器把西瓜傳輸過來！</p>
+      <p class="n">AB750打開宇宙高能量子傳輸器（高科技東西開機的音效），對準了小朋友手上三角形的西瓜。</p>
+      <p><span class="sp a">阿布：</span>準備好吧！！西瓜！！</p>
+      <p class="n">阿布看到畫面中的西瓜開始震動，宇宙高能量子傳輸器瞄準好了！</p>
+      <p><span class="sp a">阿布：</span>AB750，按下傳輸按鈕！</p>
+      <p><span class="sp r">AB750：</span>遵命～</p>
+      <p class="n">沒想到，這個時候，地球上拿著西瓜的小朋友突然——</p>
+      <p><span class="sp k">小朋友：</span>呸～</p>
+      <p class="n">吐出一個西瓜籽！就在AB750按下傳輸按鈕的時候，宇宙高能量子傳輸器瞄準成西瓜籽了。（高科技傳輸的音效）</p>
+      <p><span class="sp a">阿布：</span>（倒抽一口氣）不～～～</p>
+      <p class="n">傳到阿布手上的，不是西瓜，而是小朋友吐出來的西瓜籽！</p>
+      <p><span class="sp a">阿布：</span>我要吃西瓜～～～～～</p>
+      <p class="n">阿布好傷心，可是宇宙高能量子傳輸器已經關機了（高科技東西關機的聲音），要再等一年才能用。但是AB750說</p>
+      <p><span class="sp r">AB750：</span>也許還是可以吃西瓜喔，我查詢到種西瓜的方法。</p>
+      <p class="n">阿布的眼睛亮了起來，沒錯！他們有西瓜種子，一定可以種出西瓜！</p>
+      <p class="n">於是，從那一天起，阿布把種子埋進土裡，每天辛辛苦苦地照顧西瓜，過了不久，地上真的出現一顆圓圓的西瓜了！可是——</p>
+      <p><span class="sp a">阿布：</span>奇怪，這個綠綠、圓圓的東西是什麼啊？我看他們吃的西瓜是三角形的，有紅色的部分啊⋯⋯</p>
+      <p class="n">阿布雖然覺得奇怪，但還是繼續照顧西瓜，他猜，西瓜應該是先把下面綠色的部分長好，然後再慢慢往上長紅色的部分，最後就會變成三角形了。所以，他繼續照顧西瓜。</p>
+      <p><span class="sp a">阿布：</span>好吃的西瓜～好吃的西瓜～嘿嘿嘿～</p>
+      <p class="n">可能是因為阿布的星球特別適合西瓜生長，不知不覺，西瓜長得超級無敵大，已經有三層樓這麼高了！</p>
+      <p><span class="sp a">阿布：</span>奇怪⋯⋯怎麼還沒長出紅色的部分？</p>
+      <p class="n">阿布好累又好熱，他每天頂著大太陽照顧西瓜，快要受不了了。這時候機器人AB750過來告訴阿布</p>
+      <p><span class="sp r">AB750：</span>我查到的資料顯示：「西瓜是圓形的，可以切成各種形狀食用。」</p>
+      <p><span class="sp a">阿布：</span>什麼！！！所以西瓜是圓形的，只是被切成三角形嗎！！？</p>
+      <p class="n">阿布抬頭看著他的超巨大西瓜，原來這個西瓜早就可以吃了！阿布找來一個大電鋸，把超巨大西瓜的皮切出一個像是門一樣的東西，他打開門，看見——</p>
+      <p><span class="sp a">阿布：</span>紅色的果肉！！！耶！！！是西瓜！！</p>
+      <p class="n">阿布把整個臉埋到西瓜裡面，咬了一大口。</p>
+      <p><span class="sp a">阿布：</span>哇，真的充滿水份，又甜又清爽，充滿瓜果的香氣～</p>
+      <p class="n">阿布超級開心。從那天起，阿布每天都帶著湯匙鑽進超巨大西瓜裡，一直挖一直挖、一直吃一直吃，他在西瓜裡吃出一個隧道，還吃了好幾個房間，他挖出一個西瓜游泳池，每天跳進西瓜汁裡面游泳，阿布好喜歡這個西瓜房子，他把他的床、書桌，還有望遠鏡跟AB750都搬進來了。</p>
+      <p><span class="sp a">阿布：</span>我可以一輩子住在這個西瓜房子裡面！</p>
+      <p class="n">阿布在西瓜房子開了一個天窗，他可以從裡面用望遠鏡觀察外太空，這時候，他看到——</p>
+      <p><span class="sp a">阿布：</span>他們在吃什麼？黃黃的，軟軟的，果汁一直流下來！</p>
+      <p><span class="sp r">AB750：</span>我查到的資料顯示，他們在吃芒果，芒果甜美多汁，帶有微酸，是一種富有花香、濃郁的熱帶水果。</p>
+      <p><span class="sp a">阿布：</span>我要吃芒果！！！！！</p>
+      <p class="n">這就是今天的故事《阿布的大西瓜》，感謝阿布的提供喔！</p>
+    </div>
+  </details>
+
+  <footer>
+    <div class="logo">一起說故事</div>
+    本頁內容僅供合作繪者參考，請勿轉載或公開分享。<br>
+    © 一暝大一寸有限公司
+  </footer>
+
+</div>
+</body>
+</html>
