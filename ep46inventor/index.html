@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>發明家嘻嘻｜一起說故事 EP46 繪者參考</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#F5EFDC;
+    --cream-deep:#E9E0C4;
+    --paper:#FFFFFF;
+    --ink:#2B2823;
+    --hihi:#C4708F;     /* 嘻嘻・粉 */
+    --robot:#BC7A20;    /* 機器人們・橘 */
+    --police:#3E6FA8;   /* 警察・藍 */
+    --friend:#7A5CA8;   /* 朋友・紫 */
+    --courier:#5F8E55;  /* 宅配・綠 */
+    --blush:#E5C6C6;    /* 封面地板粉 */
+    --line:#E2DAC4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Noto Sans TC',sans-serif;
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:28px 20px 60px;}
+
+  .cover{
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(43,40,35,.15);
+    border:6px solid var(--paper);
+  }
+  .cover img{display:block;width:100%;height:auto;}
+
+  header{margin:26px 0 8px;}
+  .eyebrow{
+    font-family:'LXGW WenKai TC',serif;
+    letter-spacing:.35em;
+    font-size:.85rem;
+    opacity:.65;
+  }
+  h1{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:2.1rem;
+    line-height:1.4;
+    margin-top:4px;
+  }
+  .meta{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:3px 14px;
+    font-size:.82rem;
+  }
+
+  .card{
+    background:var(--paper);
+    border-radius:16px;
+    padding:22px 22px;
+    margin-top:22px;
+    box-shadow:0 4px 14px rgba(43,40,35,.08);
+  }
+  .card h2{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1.25rem;
+    margin-bottom:12px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .card h2::before{
+    content:"";
+    width:14px;height:14px;
+    border-radius:50%;
+    background:var(--blush);
+    border:2px solid var(--ink);
+    flex:none;
+  }
+
+  audio{width:100%;margin-top:4px;}
+  .audio-note{font-size:.8rem;opacity:.6;margin-top:8px;}
+
+  .synopsis p{margin-bottom:1em;}
+  .synopsis p:last-child{margin-bottom:0;}
+
+  .chars{list-style:none;display:grid;gap:10px;}
+  .chars li{display:flex;gap:12px;align-items:baseline;}
+  .dot{
+    width:12px;height:12px;border-radius:50%;
+    flex:none;position:relative;top:1px;
+  }
+  .dot.hihi{background:var(--hihi);}
+  .dot.robot{background:var(--robot);}
+  .dot.police{background:var(--police);}
+  .dot.friend{background:var(--friend);}
+  .dot.courier{background:var(--courier);}
+  .chars b{font-family:'LXGW WenKai TC',serif;font-size:1.05rem;margin-right:6px;}
+
+  details{margin-top:22px;}
+  details summary{
+    list-style:none;
+    cursor:pointer;
+    background:var(--paper);
+    border-radius:16px;
+    padding:18px 22px;
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1.25rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:0 4px 14px rgba(43,40,35,.08);
+    user-select:none;
+  }
+  details summary::-webkit-details-marker{display:none;}
+  details summary .toggle{
+    font-family:'Noto Sans TC',sans-serif;
+    font-size:.8rem;
+    background:var(--cream-deep);
+    border-radius:999px;
+    padding:3px 12px;
+  }
+  details[open] summary{border-radius:16px 16px 0 0;}
+  details .script{
+    background:var(--paper);
+    border-top:1px dashed var(--line);
+    border-radius:0 0 16px 16px;
+    padding:24px 22px 28px;
+    box-shadow:0 4px 14px rgba(43,40,35,.08);
+    font-size:.95rem;
+  }
+  .script p{margin-bottom:1.1em;}
+  .script p.n{opacity:.85;}
+  .script .sp{
+    font-family:'LXGW WenKai TC',serif;
+    font-weight:700;
+    margin-right:.4em;
+    white-space:nowrap;
+  }
+  .sp.h{color:var(--hihi);}
+  .sp.r{color:var(--robot);}
+  .sp.p{color:var(--police);}
+  .sp.f{color:var(--friend);}
+  .sp.c{color:var(--courier);}
+  .sp.x{color:var(--ink);}
+
+  footer{
+    margin-top:40px;
+    text-align:center;
+    font-size:.8rem;
+    opacity:.6;
+    line-height:1.7;
+  }
+  footer .logo{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1rem;
+    letter-spacing:.2em;
+    opacity:.9;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="cover"><img src="cover.jpg" alt="發明家嘻嘻 封面：穿白袍、眼睛轉圈圈的發明家女孩被一群灰色機器人包圍，機器人手上拿著湯匙、梳子和襪子"></div>
+
+  <header>
+    <div class="eyebrow">一起說故事・繪者合作參考</div>
+    <h1>發明家嘻嘻</h1>
+    <div class="meta">
+      <span class="chip">EP46</span>
+      <span class="chip">廣播劇約 9 分鐘</span>
+      <span class="chip">改編自佑佑和希希投稿</span>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>廣播劇音檔</h2>
+    <audio controls preload="metadata" src="audio.mp3"></audio>
+    <p class="audio-note">完整版廣播劇，含配音與音效，供角色聲音表情參考。</p>
+  </section>
+
+  <section class="card synopsis">
+    <h2>故事大綱</h2>
+    <p>小鎮上的發明家嘻嘻每天忙著做實驗，連收包裹、陪朋友聊天、吃飯、脫襪子、洗澡都覺得浪費時間。於是她熬夜打造了一支「機器人大軍」：收包裹機器人、聊天機器人、餵飯機器人、脫襪子機器人、洗澡機器人，從此雜事全部交給它們！</p>
+    <p>沒想到機器人各司其「錯」的職：聊天機器人把宅配員拉去咖啡店大聊特聊，包裹沒人收；洗澡機器人把朋友帶來的草莓蛋糕拿去搓泡泡、沖進水管；脫襪子機器人見人就脫襪子；餵飯機器人更是用臭襪子包著爛蛋糕捲成「壽司」，塞進專心工作、看都沒看的嘻嘻嘴裡。朋友嚇得跑去報警，結果連上門關心的警察都被脫了襪子、抓去洗澡。</p>
+    <p>一場大混亂直到機器人通通沒電才結束。警察嚴正警告，嘻嘻低頭道歉——但下一秒立刻恢復開朗：「我之後會繼續改良的！」故事最後開放小聽眾投稿：你覺得嘻嘻應該要有什麼新發明呢？</p>
+  </section>
+
+  <section class="card">
+    <h2>登場角色</h2>
+    <ul class="chars">
+      <li><span class="dot hihi"></span><span><b>嘻嘻</b>主角，天才發明家（女孩）。工作起來廢寢忘食、對周遭渾然不覺，失敗了也秒速恢復開朗，繼續改良下一個發明。</span></li>
+      <li><span class="dot robot"></span><span><b>機器人大軍</b>收包裹、聊天、餵飯、脫襪子、洗澡五款機器人。每一台都超級盡忠職守，口頭禪「沒問題，交給我處理」——只是永遠用在錯的對象上。</span></li>
+      <li><span class="dot courier"></span><span><b>宅配員</b>只想送個包裹，卻被聊天機器人拉去咖啡店聊了一下午。</span></li>
+      <li><span class="dot friend"></span><span><b>朋友</b>帶著草莓蛋糕來訪，親眼目睹蛋糕被洗澡、襪子被脫掉，嚇得跑去報警。</span></li>
+      <li><span class="dot police"></span><span><b>警察</b>前來關心的兩位執法人員，最後也淪為脫襪子和洗澡機器人的服務對象，倖存後提出嚴正警告。</span></li>
+    </ul>
+  </section>
+
+  <details>
+    <summary>完整劇本<span class="toggle">點擊展開</span></summary>
+    <div class="script">
+      <p class="n">哈囉，我們來一起說故事囉！今天要說的故事叫做《發明家嘻嘻》，改編自佑佑和希希的《發明家嘻嘻》。</p>
+      <p class="n">在一個小鎮上，住著一個很聰明的發明家，他的名字叫做嘻嘻，他每天都忙著做很多實驗，發明很多神奇的東西。像是⋯⋯</p>
+      <p class="n">（機械聲、擠果醬的聲音）</p>
+      <p><span class="sp h">嘻嘻：</span>嘿嘿！自動抹果醬機！從今以後，再也不用自己塗果醬在吐司上面啦！</p>
+      <p class="n">嘻嘻咬了一口用自動抹果醬機做的草莓吐司。</p>
+      <p><span class="sp h">嘻嘻：</span>噁⋯⋯抹太多了⋯⋯太甜了！這個發明還要再改良！哎唷好忙好忙</p>
+      <p class="n">嘻嘻每天都很忙碌，偏偏，還是有很多事情要做，像是⋯⋯收包裹。</p>
+      <p class="n">（叮咚）</p>
+      <p><span class="sp c">宅配：</span>發明家嘻嘻的包裹喔～</p>
+      <p><span class="sp h">嘻嘻：</span>好了～來了～哎好忙好忙，要是有人可以幫我收包裹就好了⋯⋯</p>
+      <p class="n">嘻嘻收完包裹，繼續做實驗，這時候⋯⋯</p>
+      <p class="n">（叮咚）</p>
+      <p><span class="sp f">朋友：</span>嘻嘻～我來找你玩了～我們來聊天～</p>
+      <p><span class="sp h">嘻嘻：</span>好了～來了～怎麼樣？我們要聊什麼？我在做實驗，好忙好忙，要是可以有人幫我跟朋友聊天就好了⋯⋯</p>
+      <p class="n">嘻嘻跟朋友聊天完，繼續做實驗，這時候⋯⋯</p>
+      <p class="n">（肚子咕嚕）</p>
+      <p><span class="sp h">嘻嘻：</span>喔，好餓，要是有人可以餵我吃飯，我就可以邊吃飯邊做實驗了⋯⋯</p>
+      <p class="n">嘻嘻吃完飯，繼續做實驗，到了好晚好晚的時候</p>
+      <p><span class="sp h">嘻嘻：</span>（伸懶腰）一整天這麼累，居然還要自己脫襪子、自己去洗澡⋯⋯真是太麻煩了！我應該要發明一些好幫手，來替我完成這些事情⋯⋯</p>
+      <p class="n">於是，這一天晚上，嘻嘻沒有睡覺，（各種機器聲、焊接聲、工業製造聲）她花了好多好多時間工作，終於，在早上的時候⋯⋯</p>
+      <p><span class="sp h">嘻嘻：</span>完～成～了！嘻嘻的機器人大軍！</p>
+      <p class="n">嘻嘻做了好多機器人，這些機器人有什麼功能呢？</p>
+      <p><span class="sp r">收包裹機器人：</span>我是收包裹機器人，我負責收包裹！</p>
+      <p><span class="sp r">聊天機器人：</span>我是聊天機器人，我負責跟嘻嘻的朋友聊天，我講話很像一般人吧？我的笑聲，也很像一般人喔！哈哈哈～哈哈哈～哈哈哈～</p>
+      <p class="n">還有</p>
+      <p><span class="sp r">餵飯機器人：</span>我是餵飯機器人，我會餵別人吃飯！</p>
+      <p><span class="sp r">脫襪子機器人：</span>我是脫襪子機器人，我會幫別人脫襪子！</p>
+      <p><span class="sp r">洗澡機器人：</span>我是洗澡機器人，我會幫別人洗澡！</p>
+      <p><span class="sp h">嘻嘻：</span>呵呵～有了我的機器人大軍，我今天一定可以專心工作，其他的事情，就交給你們啦！</p>
+      <p><span class="sp r">眾機器人：</span>遵命！</p>
+      <p class="n">於是，嘻嘻就開始工作。</p>
+      <p class="n">（叮咚）</p>
+      <p><span class="sp c">宅配：</span>發明家嘻嘻的包裹喔～</p>
+      <p class="n">送包裹的人來了，可是，聊天機器人卻出動了</p>
+      <p><span class="sp r">聊天機器人：</span>你好啊～</p>
+      <p><span class="sp c">宅配：</span>呃，你好啊，這是發明家嘻嘻的包裹，你可以幫忙簽收嗎？</p>
+      <p><span class="sp r">聊天機器人：</span>嗯，你覺得這個包裹裡面會是什麼啊？</p>
+      <p><span class="sp c">宅配：</span>呃⋯⋯我不知道啊</p>
+      <p><span class="sp r">聊天機器人：</span>你猜猜看啊！你覺得是衣服還是衛生紙啊？</p>
+      <p><span class="sp c">宅配：</span>這包裹很重欸，應該是書吧</p>
+      <p><span class="sp r">聊天機器人：</span>吼，有可能對不對？不然這樣，我們巷口有一家不錯的咖啡店，我們坐著慢慢聊。</p>
+      <p class="n">聊天機器人居然帶著送貨員去巷口的咖啡店，大聊特聊！這時候，又有一個人來了</p>
+      <p><span class="sp f">朋友：</span>嘻嘻～我帶了好吃的草莓蛋糕喔～</p>
+      <p><span class="sp r">洗澡機器人：</span>沒問題，交給我處理～</p>
+      <p class="n">洗澡機器人出動，把嘻嘻朋友手上的草莓蛋糕拿去浴室！</p>
+      <p><span class="sp r">洗澡機器人：</span>開始洗澡～搓泡泡！</p>
+      <p class="n">洗澡機器人在草莓蛋糕上面擠了好多洗髮精，一直洗一直洗。</p>
+      <p><span class="sp r">洗澡機器人：</span>把泡泡沖掉，開水龍頭～</p>
+      <p class="n">洗澡機器人開了水龍頭，草莓蛋糕被沖走了</p>
+      <p><span class="sp f">朋友：</span>喂～我們的草莓蛋糕啊！</p>
+      <p><span class="sp r">脫襪子機器人：</span>沒問題，交給我處理</p>
+      <p class="n">脫襪子機器人出動了，他把嘻嘻朋友的襪子脫下來了！</p>
+      <p><span class="sp f">朋友：</span>喂！為什麼要脫掉我的襪子！？</p>
+      <p class="n">嘻嘻的朋友害怕地逃走了，他跑去警察局，跟警察說嘻嘻家需要幫忙。</p>
+      <p class="n">這時候，專心工作的嘻嘻根本不知道外面發生了什麼事，不過，她肚子突然傳來咕嚕咕嚕的聲音，她肚子餓了！</p>
+      <p><span class="sp r">餵飯機器人：</span>沒問題，交給我處理</p>
+      <p class="n">餵飯機器人出動了，他拿了一個盤子，去浴室撈起爛爛的草莓蛋糕，然後再去跟脫襪子機器人拿他剛剛脫下來的襪子</p>
+      <p><span class="sp r">餵飯機器人：</span>來，嘻嘻，嘴巴張開～</p>
+      <p><span class="sp h">嘻嘻：</span>啊～</p>
+      <p class="n">嘻嘻根本沒有轉頭看餵飯機器人要餵她吃什麼，就張開嘴巴了。餵飯機器人用嘻嘻朋友的臭襪子包著爛爛的草莓蛋糕，做成像壽司的東西，塞進嘻嘻的嘴巴裡。</p>
+      <p><span class="sp h">嘻嘻：</span>（嘴巴被塞住亂叫聲）</p>
+      <p><span class="sp r">餵飯機器人：</span>好吃嗎？再來一口～</p>
+      <p><span class="sp h">嘻嘻：</span>（嘴巴被塞住亂叫聲）</p>
+      <p class="n">這時候又有人按電鈴了（叮咚）</p>
+      <p><span class="sp r">收包裹機器人：</span>沒問題，交給我處理</p>
+      <p class="n">收包裹機器人出動了，他開門，外面站著兩個警察</p>
+      <p><span class="sp p">警察：</span>你好，我們剛剛收到報案，說這裡好像發生奇怪的事，需要幫忙嗎？</p>
+      <p><span class="sp r">收包裹機器人：</span>有幾件包裹？</p>
+      <p><span class="sp p">警察：</span>呃，我是說，需要幫忙嗎？</p>
+      <p><span class="sp r">收包裹機器人：</span>請給我簽收單，我來簽收，我是收包裹的機器人。</p>
+      <p><span class="sp p">警察：</span>呃⋯⋯沒事就好。</p>
+      <p class="n">警察準備關門離開的時候⋯⋯</p>
+      <p><span class="sp r">脫襪子機器人：</span>沒問題，交給我處理</p>
+      <p class="n">脫襪子機器人出動了，他把警察的襪子脫下來了！</p>
+      <p><span class="sp p">警察：</span>喂！喂！你要做什麼？</p>
+      <p><span class="sp r">洗澡機器人：</span>沒問題，交給我處理～</p>
+      <p class="n">洗澡機器人出動，把警察搬到浴室！</p>
+      <p><span class="sp r">洗澡機器人：</span>開始洗澡～搓泡泡！</p>
+      <p><span class="sp p">警察：</span>喂～救命啊～</p>
+      <p><span class="sp r">餵飯機器人：</span>第二道菜也準備好了，餵飯機器人，出動～</p>
+      <p class="n">餵飯機器人去拿了警察的臭襪子，又想餵嘻嘻吃</p>
+      <p><span class="sp h">嘻嘻：</span>（嘴巴被塞住亂叫聲）</p>
+      <p class="n">就這樣，機器人把嘻嘻家搞得亂七八糟，一直到他們沒電了，嘻嘻和警察才鬆一口氣</p>
+      <p><span class="sp x">嘻嘻、警察：</span>總算得救了⋯⋯</p>
+      <p class="n">警察對嘻嘻說</p>
+      <p><span class="sp p">警察：</span>發明家嘻嘻，你發明的這些機器人，讓這裡變得很危險，我身為警察，在此提出嚴正的警告！</p>
+      <p class="n">嘻嘻難過地低下頭</p>
+      <p><span class="sp h">嘻嘻：</span>對不起，這些發明有點問題⋯⋯（語氣一轉，開朗少女成功記）我之後會繼續改良的！</p>
+      <p class="n">發明家嘻嘻下定決心，下一次，她一定要發明更棒、更好用的東西！你覺得嘻嘻應該要有什麼新發明呢？</p>
+      <p class="n">這就是今天的故事《發明家嘻嘻》，感謝佑佑和希希的提供喔！</p>
+    </div>
+  </details>
+
+  <footer>
+    <div class="logo">一起說故事</div>
+    本頁內容僅供合作繪者參考，請勿轉載或公開分享。<br>
+    © 一暝大一寸有限公司
+  </footer>
+
+</div>
+</body>
+</html>
