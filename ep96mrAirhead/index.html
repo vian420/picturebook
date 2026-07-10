@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>迷糊先生｜一起說故事 EP96 繪者參考</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --linen:#EBDDB4;
+    --linen-deep:#DFCD9B;
+    --paper:#FDFBF3;
+    --ink:#33291C;
+    --mister:#B06A38;    /* 迷糊先生・眼鏡棕 */
+    --neighbor:#5E87A0;  /* 鄰居們・襯衫藍 */
+    --kid:#6D9455;       /* 鄰居小孩・襪子綠 */
+    --boss:#9B6B8D;      /* 老闆 */
+    --line:#E4DBC4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--linen);
+    color:var(--ink);
+    font-family:'Noto Sans TC',sans-serif;
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:28px 20px 60px;}
+
+  .cover{
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(51,41,28,.15);
+    border:6px solid var(--paper);
+  }
+  .cover img{display:block;width:100%;height:auto;}
+
+  header{margin:26px 0 8px;}
+  .eyebrow{
+    font-family:'LXGW WenKai TC',serif;
+    letter-spacing:.35em;
+    font-size:.85rem;
+    opacity:.65;
+  }
+  h1{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:2.1rem;
+    line-height:1.4;
+    margin-top:4px;
+  }
+  .meta{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:3px 14px;
+    font-size:.82rem;
+  }
+
+  .card{
+    background:var(--paper);
+    border-radius:16px;
+    padding:22px 22px;
+    margin-top:22px;
+    box-shadow:0 4px 14px rgba(51,41,28,.07);
+  }
+  .card h2{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1.25rem;
+    margin-bottom:12px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .card h2::before{
+    content:"";
+    width:14px;height:14px;
+    border-radius:50%;
+    background:var(--linen-deep);
+    border:2px solid var(--ink);
+    flex:none;
+  }
+
+  audio{width:100%;margin-top:4px;}
+  .audio-note{font-size:.8rem;opacity:.6;margin-top:8px;}
+
+  .synopsis p{margin-bottom:1em;}
+  .synopsis p:last-child{margin-bottom:0;}
+
+  .chars{list-style:none;display:grid;gap:10px;}
+  .chars li{display:flex;gap:12px;align-items:baseline;}
+  .dot{
+    width:12px;height:12px;border-radius:50%;
+    flex:none;position:relative;top:1px;
+  }
+  .dot.mister{background:var(--mister);}
+  .dot.neighbor{background:var(--neighbor);}
+  .dot.kid{background:var(--kid);}
+  .dot.boss{background:var(--boss);}
+  .chars b{font-family:'LXGW WenKai TC',serif;font-size:1.05rem;margin-right:6px;}
+
+  details{margin-top:22px;}
+  details summary{
+    list-style:none;
+    cursor:pointer;
+    background:var(--paper);
+    border-radius:16px;
+    padding:18px 22px;
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1.25rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:0 4px 14px rgba(51,41,28,.07);
+    user-select:none;
+  }
+  details summary::-webkit-details-marker{display:none;}
+  details summary .toggle{
+    font-family:'Noto Sans TC',sans-serif;
+    font-size:.8rem;
+    background:var(--linen-deep);
+    border-radius:999px;
+    padding:3px 12px;
+  }
+  details[open] summary{border-radius:16px 16px 0 0;}
+  details .script{
+    background:var(--paper);
+    border-top:1px dashed var(--line);
+    border-radius:0 0 16px 16px;
+    padding:24px 22px 28px;
+    box-shadow:0 4px 14px rgba(51,41,28,.07);
+    font-size:.95rem;
+  }
+  .script p{margin-bottom:1.1em;}
+  .script p.n{opacity:.85;}
+  .script .sp{
+    font-family:'LXGW WenKai TC',serif;
+    font-weight:700;
+    margin-right:.4em;
+    white-space:nowrap;
+  }
+  .sp.m{color:var(--mister);}
+  .sp.nb{color:var(--neighbor);}
+  .sp.k{color:var(--kid);}
+  .sp.b{color:var(--boss);}
+  .sp.x{color:var(--ink);}
+
+  footer{
+    margin-top:40px;
+    text-align:center;
+    font-size:.8rem;
+    opacity:.6;
+    line-height:1.7;
+  }
+  footer .logo{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1rem;
+    letter-spacing:.2em;
+    opacity:.9;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="cover"><img src="cover.jpg" alt="迷糊先生 封面：頭髮亂翹、髮上插著一把鑰匙的大叔，戴著棕色方框眼鏡，肩上還掛著一隻綠色襪子"></div>
+
+  <header>
+    <div class="eyebrow">一起說故事・繪者合作參考</div>
+    <h1>迷糊先生</h1>
+    <div class="meta">
+      <span class="chip">EP96</span>
+      <span class="chip">廣播劇約 10 分鐘</span>
+      <span class="chip">改編自小絜《迷糊先生》</span>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>廣播劇音檔</h2>
+    <audio controls preload="metadata" src="audio.mp3"></audio>
+    <p class="audio-note">完整版廣播劇，含配音與音效，供角色聲音表情參考。</p>
+  </section>
+
+  <section class="card synopsis">
+    <h2>故事大綱</h2>
+    <p>夏天的第一天，迷糊先生擦好吊扇、打開開關，看到吊燈晃來晃去，以為地震來了，把整條街的鄰居全都叫出門——結果只是吊扇的風。他每做一件事都覺得「我真細心，我真棒！」，卻總在下一秒闖出新的禍。</p>
+    <p>為了跟鄰居道歉，迷糊先生決定烤蛋糕：去雞舍撿蛋卻忘了關門，母雞全跑了出來；到雜貨店忘了看食譜，乾脆買最大包的麵粉和砂糖，一路拖回家，袋子磨破了都沒發現，整條街灑滿了麵粉和糖。回到家，他連自己為什麼要做蛋糕都忘了，想了半天認定「一定是我生日！」，還為了練習吹蠟燭把家裡燒了起來。</p>
+    <p>鄰居們一邊抓雞、一邊刷洗街道、一邊救火，忙得團團轉。沒想到滅火的水混上清潔劑，整條街變成了巨大的泡泡浴缸——迷糊先生感動地以為這是大家幫他準備的生日驚喜。他的生日明明是冬天，但看他這麼開心，連鄰居都被搞迷糊了，最後乾脆一起玩起泡泡。</p>
+  </section>
+
+  <section class="card">
+    <h2>登場角色</h2>
+    <ul class="chars">
+      <li><span class="dot mister"></span><span><b>迷糊先生</b>主角。亂糟糟的頭髮上插著鑰匙、肩上掛著襪子，做什麼忘什麼，卻永遠自我感覺良好：「我真細心，我真棒！」</span></li>
+      <li><span class="dot neighbor"></span><span><b>鄰居們（A～D）</b>整條街的受害者。被半夜叫出門、抓雞、刷街、救火樣樣來，對迷糊先生又好氣又好笑。</span></li>
+      <li><span class="dot kid"></span><span><b>鄰居小孩</b>眼睛最尖的一個，第一個發現「那是吊扇的風不是地震」，也是第一個發現火災的人。</span></li>
+      <li><span class="dot boss"></span><span><b>雜貨店老闆</b>敬業地扛出最大包的麵粉和砂糖。</span></li>
+    </ul>
+  </section>
+
+  <details>
+    <summary>完整劇本<span class="toggle">點擊展開</span></summary>
+    <div class="script">
+      <p class="n">哈囉，我們來一起說故事囉！今天要說的故事叫做《迷糊先生》，改編自小絜的《迷糊先生》。</p>
+      <p class="n">（蟬聲）</p>
+      <p class="n">夏天的第一天，迷糊先生搬來了一把梯子。</p>
+      <p><span class="sp m">迷糊先生：</span>嘿咻、嘿咻</p>
+      <p class="n">迷糊先生把梯子擺好，小心地爬上去，用抹布輕輕把吊扇上面的灰塵擦乾淨。</p>
+      <p><span class="sp m">迷糊先生：</span>嘿嘿，在開吊扇之前記得要擦灰塵，我真細心，我真棒！</p>
+      <p class="n">迷糊先生把工具收好，開開心心地坐在沙發上，打開吊扇，準備享受乾淨的涼風，可是，他發現——</p>
+      <p><span class="sp m">迷糊先生：</span>咦！吊燈！吊燈怎麼晃來晃去！不好了，地震了！地震了！</p>
+      <p class="n">迷糊先生好慌張，他立刻跑出家門，去敲每一個鄰居的門</p>
+      <p><span class="sp m">迷糊先生：</span>地震了！地震了！趕快出來！趕快出來！</p>
+      <p><span class="sp nb">眾鄰居：</span>怎麼回事啊？有地震嗎？不知道耶我沒感覺到啊</p>
+      <p class="n">迷糊先生的鄰居們全部跑出家門，迷糊先生覺得</p>
+      <p><span class="sp m">迷糊先生：</span>（喘）雖然地震很緊張，可是我記得要通知大家，我真細心，我真棒！</p>
+      <p><span class="sp nb">鄰居A：</span>迷糊先生，我們都沒有感覺到地震啊！</p>
+      <p><span class="sp m">迷糊先生：</span>有！真的有！你們看，我的吊燈晃來晃去！對吧？</p>
+      <p><span class="sp k">鄰居小孩：</span>迷糊先生，那是因為你開了吊扇！是風吹的，不是地震！</p>
+      <p><span class="sp m">迷糊先生：</span>欸⋯⋯欸？真的耶，哈哈哈哈</p>
+      <p class="n">（眾鄰居抱怨離去）鄰居們搖搖頭，各自回去了。迷糊先生覺得有點難過，因為他太迷糊了，造成鄰居的困擾。</p>
+      <p><span class="sp m">迷糊先生：</span>嗯⋯⋯我一定要想個方法道歉才行⋯⋯對了！我可以烤蛋糕請大家吃！</p>
+      <p class="n">迷糊先生立刻跑回家，拿一張紙，寫下需要的材料。</p>
+      <p><span class="sp m">迷糊先生：</span>這樣就不怕忘記買東西了，我真細心，我真棒！</p>
+      <p class="n">迷糊先生的心情一下子就變好了。他邊吹口哨邊散步到雞舍。</p>
+      <p><span class="sp m">迷糊先生：</span>首先，我需要雞蛋，我帶了籃子和軟軟的布來裝，這樣就不怕打破雞蛋了～</p>
+      <p class="n">迷糊先生覺得他真細心，他真棒，可是，他撿完雞蛋，離開雞舍的時候，忘記把門關上了，母雞們全部都跑出來啦！（一堆雞叫）</p>
+      <p class="n">但是，迷糊先生沒有發現，因為他趕著去雜貨店買做蛋糕的材料。</p>
+      <p><span class="sp m">迷糊先生：</span>老闆，我要麵粉跟砂糖！</p>
+      <p><span class="sp b">老闆：</span>好的，你要多少？</p>
+      <p><span class="sp m">迷糊先生：</span>呃⋯⋯呃⋯⋯</p>
+      <p class="n">糟糕，迷糊先生忘記先看食譜，他不知道做蛋糕需要多少麵粉和砂糖，但是，他想到一個好主意。</p>
+      <p><span class="sp m">迷糊先生：</span>我、我要買最大包的！</p>
+      <p><span class="sp b">老闆：</span>好的，最大包的麵粉跟砂糖～</p>
+      <p class="n">（十公斤的麵粉跟砂糖袋丟到地上的聲音）</p>
+      <p><span class="sp m">迷糊先生：</span>嘿嘿，買最大包的，一定夠用，我真是會臨機應變，我真棒！</p>
+      <p class="n">可是，最大包的麵粉跟砂糖好重好重，迷糊先生完全搬不動，所以，他用拖的。</p>
+      <p><span class="sp m">迷糊先生：</span>嘿～～咻！嘿～～咻！</p>
+      <p class="n">迷糊先生一開始拖著麵粉袋跟砂糖袋，他覺得好重好重，可是過了一陣子</p>
+      <p><span class="sp m">迷糊先生：</span>嘿咻～嘿咻～咦？變得好輕鬆，我力氣變大了，我真棒！</p>
+      <p class="n">迷糊先生完全沒有發現，原來是麵粉袋跟砂糖袋在地上一直磨、一直磨，早就磨破了！整條路上，都是迷糊先生漏出來的麵粉跟砂糖。但是，迷糊先生沒有發現。</p>
+      <p class="n">（關門）迷糊先生回到家。</p>
+      <p><span class="sp m">迷糊先生：</span>真是辛苦我了，來做蛋糕囉！</p>
+      <p class="n">迷糊先生捲起袖子，正準備做蛋糕的時候，他突然停下來，歪著頭說</p>
+      <p><span class="sp m">迷糊先生：</span>是說，我為什麼要做蛋糕啊？</p>
+      <p class="n">迷糊先生忘記自己為什麼要做蛋糕了！他抓抓頭，想啊想，想了好久好久，終於想到</p>
+      <p><span class="sp m">迷糊先生：</span>一定是因為我生日吧！哈哈，我連自己的生日都忘記，我真是迷糊啊！還好我想起來了！</p>
+      <p class="n">迷糊先生覺得很高興，然後，他又想到了——</p>
+      <p><span class="sp m">迷糊先生：</span>既然是我的生日，大家應該會想送我禮物，可是，應該會有人很迷糊，忘記包裝禮物！我應該幫他們準備包裝紙，這樣，他們就可以包裝禮物了！我真貼心，我真棒！</p>
+      <p class="n">迷糊先生馬上拿出一大捲圖畫紙，他把畫紙拉得好長好長，在上面畫了滿滿的漂亮的圖案。</p>
+      <p><span class="sp m">迷糊先生：</span>完成了！真是漂亮的包裝紙啊！啊，對了，如果是生日蛋糕的話，一定要有那個東西⋯⋯</p>
+      <p class="n">迷糊先生邊說，邊走到儲藏室找東西。這個時候，迷糊先生的鄰居們在做什麼呢？</p>
+      <p class="n">（雞飛狗跳）</p>
+      <p><span class="sp nb">鄰居A：</span>怎麼回事？怎麼到處都是雞！</p>
+      <p><span class="sp nb">鄰居B：</span>欸欸欸！不要亂踩我的花園！</p>
+      <p><span class="sp nb">鄰居C：</span>哎唷我踩到雞屎了啦！！</p>
+      <p class="n">（狗開心舔舔叫叫）</p>
+      <p><span class="sp nb">鄰居D：</span>小白！小白不要舔路上的粉！那是什麼！！</p>
+      <p><span class="sp k">鄰居小孩：</span>是砂糖，好甜喔呵呵呵呵</p>
+      <p><span class="sp nb">鄰居A：</span>（崩潰）不可以吃路上的砂糖啦！！</p>
+      <p class="n">鄰居們忙得團團轉，他們跑來跑去，要把雞抓回來。（鄰居忙、雞叫、飛飛飛）還在地上潑了水跟清潔劑，準備把砂糖和麵粉跟雞的便便都刷掉，但是——</p>
+      <p><span class="sp k">鄰居小孩：</span>怎麼有煙！迷糊先生的家有煙！</p>
+      <p class="n">（眾人倒抽一口氣）</p>
+      <p><span class="sp nb">鄰居A：</span>不好了！失火了失火了！！迷糊先生家發生火災了！！</p>
+      <p class="n">（消防車的聲音、滅火聲、眾人忙碌）</p>
+      <p class="n">所有的人忙進忙出，總算把迷糊先生家的火給滅了，還好，大家都沒有受傷，迷糊先生也平安無事。</p>
+      <p><span class="sp nb">鄰居A：</span>到底發生什麼事了？</p>
+      <p><span class="sp nb">鄰居B：</span>迷糊先生你家怎麼會發生火災？</p>
+      <p><span class="sp m">迷糊先生：</span>呃⋯⋯</p>
+      <p class="n">迷糊先生有點不好意思地抓抓頭，他說。</p>
+      <p><span class="sp m">迷糊先生：</span>我就是覺得，生日蛋糕上面一定要有蠟燭，所以我去找蠟燭，找到蠟燭之後，想說先點燃，來練習把蠟燭吹熄⋯⋯</p>
+      <p><span class="sp x">眾人：</span>蛤？？</p>
+      <p><span class="sp m">迷糊先生：</span>我想要吹蠟燭的時候，看起來很厲害，所以就先練習了呵呵呵呵⋯⋯</p>
+      <p class="n">結果迷糊先生沒有把火吹熄，卻不小心把蠟燭吹倒，倒在包裝紙上，一下子就燒起來了。</p>
+      <p><span class="sp m">迷糊先生：</span>真是抱歉，讓大家擔心了⋯⋯</p>
+      <p class="n">迷糊先生低下頭跟大家道歉，就在這個時候，一個小小的泡泡從窗外飛了進來，飛到迷糊先生的鼻子上，然後破掉。</p>
+      <p><span class="sp m">迷糊先生：</span>咦？怎麼有泡泡？</p>
+      <p class="n">迷糊先生走出家門，發現原本用來滅火的水流到街上，跟清潔劑混合出好多好多的泡泡，整條街像是一個超大的泡泡浴缸！</p>
+      <p><span class="sp m">迷糊先生：</span>哇～～～～外面在開泡泡派對嗎？</p>
+      <p class="n">迷糊先生眼睛都亮了起來</p>
+      <p><span class="sp m">迷糊先生：</span>原來你們幫我準備了這麼棒的生日驚喜！謝謝大家！</p>
+      <p class="n">迷糊先生開心地在泡泡街上跑來跑去，鄰居們看傻了眼</p>
+      <p><span class="sp nb">鄰居A：</span>他說什麼？生日？</p>
+      <p><span class="sp nb">鄰居B：</span>誰生日啊？</p>
+      <p><span class="sp nb">鄰居C：</span>不知道耶，是他生日嗎？</p>
+      <p><span class="sp k">鄰居小孩：</span>不是吧，我記得他生日是冬天啊。</p>
+      <p><span class="sp nb">眾鄰居：</span>我也記得啊。</p>
+      <p class="n">（迷糊先生在背景：哈哈哈哈～哈哈哈哈～）</p>
+      <p><span class="sp nb">鄰居A：</span>可是他現在這麼開心，可能今天真的是他生日吧？</p>
+      <p><span class="sp nb">鄰居B：</span>那應該是我們記錯了吧</p>
+      <p><span class="sp nb">眾鄰居：</span>應該是喔～</p>
+      <p><span class="sp k">鄰居小孩：</span>是說，我有點想玩泡泡耶⋯⋯</p>
+      <p><span class="sp nb">鄰居C：</span>我也是⋯⋯</p>
+      <p><span class="sp nb">鄰居D：</span>我也是⋯⋯</p>
+      <p><span class="sp nb">鄰居A：</span>那就一起去玩吧！</p>
+      <p><span class="sp x">迷糊先生、鄰居們：</span>哈哈哈哈哈～哈哈哈哈哈～</p>
+      <p class="n">迷糊先生真是太迷糊了，迷糊到，連鄰居都被他搞迷糊了。</p>
+      <p class="n">這就是今天的故事《迷糊先生》，感謝小絜的提供喔！</p>
+    </div>
+  </details>
+
+  <footer>
+    <div class="logo">一起說故事</div>
+    本頁內容僅供合作繪者參考，請勿轉載或公開分享。<br>
+    © 一暝大一寸有限公司
+  </footer>
+
+</div>
+</body>
+</html>
