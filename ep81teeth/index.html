@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>強強與蛀牙菌2：蛀牙菌的陰謀｜一起說故事 EP81 繪者參考</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --dark:#2A3634;
+    --dark-deep:#1F2A28;
+    --paper:#FBFAF2;
+    --ink:#2C3230;
+    --glow:#CFE7DA;
+    --germ:#5F8E55;     /* 蛀牙菌們 */
+    --boss:#A6503F;     /* 老闆 */
+    --hero:#3E7FA6;     /* 強強 */
+    --mom:#C4708F;      /* 媽媽 */
+    --staff:#7A5CA8;    /* 秘書與職員 */
+    --line:#E0DCC9;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--dark);
+    color:var(--ink);
+    font-family:'Noto Sans TC',sans-serif;
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:28px 20px 60px;}
+
+  .cover{
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.45);
+    border:6px solid var(--paper);
+  }
+  .cover img{display:block;width:100%;height:auto;}
+
+  header{margin:26px 0 8px;}
+  .eyebrow{
+    font-family:'LXGW WenKai TC',serif;
+    letter-spacing:.35em;
+    font-size:.85rem;
+    color:var(--glow);
+    opacity:.8;
+  }
+  h1{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1.9rem;
+    line-height:1.4;
+    margin-top:4px;
+    color:var(--glow);
+  }
+  h1 .sub{
+    display:block;
+    font-size:1.1rem;
+    opacity:.8;
+  }
+  .meta{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:3px 14px;
+    font-size:.82rem;
+  }
+
+  .card{
+    background:var(--paper);
+    border-radius:16px;
+    padding:22px 22px;
+    margin-top:22px;
+    box-shadow:0 6px 18px rgba(0,0,0,.3);
+  }
+  .card h2{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1.25rem;
+    margin-bottom:12px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .card h2::before{
+    content:"";
+    width:14px;height:14px;
+    border-radius:50%;
+    background:var(--glow);
+    border:2px solid var(--ink);
+    flex:none;
+  }
+
+  audio{width:100%;margin-top:4px;}
+  .audio-note{font-size:.8rem;opacity:.6;margin-top:8px;}
+
+  .synopsis p{margin-bottom:1em;}
+  .synopsis p:last-child{margin-bottom:0;}
+
+  .chars{list-style:none;display:grid;gap:10px;}
+  .chars li{display:flex;gap:12px;align-items:baseline;}
+  .dot{
+    width:12px;height:12px;border-radius:50%;
+    flex:none;position:relative;top:1px;
+  }
+  .dot.germ{background:var(--germ);}
+  .dot.boss{background:var(--boss);}
+  .dot.hero{background:var(--hero);}
+  .dot.mom{background:var(--mom);}
+  .dot.staff{background:var(--staff);}
+  .chars b{font-family:'LXGW WenKai TC',serif;font-size:1.05rem;margin-right:6px;}
+
+  details{margin-top:22px;}
+  details summary{
+    list-style:none;
+    cursor:pointer;
+    background:var(--paper);
+    border-radius:16px;
+    padding:18px 22px;
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1.25rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:0 6px 18px rgba(0,0,0,.3);
+    user-select:none;
+  }
+  details summary::-webkit-details-marker{display:none;}
+  details summary .toggle{
+    font-family:'Noto Sans TC',sans-serif;
+    font-size:.8rem;
+    background:#DCEBE1;
+    border-radius:999px;
+    padding:3px 12px;
+  }
+  details[open] summary{border-radius:16px 16px 0 0;}
+  details .script{
+    background:var(--paper);
+    border-top:1px dashed var(--line);
+    border-radius:0 0 16px 16px;
+    padding:24px 22px 28px;
+    box-shadow:0 6px 18px rgba(0,0,0,.3);
+    font-size:.95rem;
+  }
+  .script p{margin-bottom:1.1em;}
+  .script p.n{opacity:.85;}
+  .script .sp{
+    font-family:'LXGW WenKai TC',serif;
+    font-weight:700;
+    margin-right:.4em;
+    white-space:nowrap;
+  }
+  .sp.g{color:var(--germ);}
+  .sp.b{color:var(--boss);}
+  .sp.h{color:var(--hero);}
+  .sp.m{color:var(--mom);}
+  .sp.s{color:var(--staff);}
+  .sp.x{color:var(--ink);}
+
+  footer{
+    margin-top:40px;
+    text-align:center;
+    font-size:.8rem;
+    color:var(--glow);
+    opacity:.75;
+    line-height:1.7;
+  }
+  footer .logo{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1rem;
+    letter-spacing:.2em;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="cover"><img src="cover.jpg" alt="強強與蛀牙菌2：蛀牙菌的陰謀 封面：黑暗中五隻發著光的病菌反派登場，有戴墨鏡的、纏金鍊的、戴眼罩舉劍的蛀牙菌"></div>
+
+  <header>
+    <div class="eyebrow">一起說故事・繪者合作參考</div>
+    <h1><span class="sub">強強與蛀牙菌2</span>蛀牙菌的陰謀</h1>
+    <div class="meta">
+      <span class="chip">EP81</span>
+      <span class="chip">廣播劇約 11 分鐘</span>
+      <span class="chip">改編自 Ollie 投稿</span>
+      <span class="chip">強強系列續集</span>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>廣播劇音檔</h2>
+    <audio controls preload="metadata" src="audio.mp3"></audio>
+    <p class="audio-note">完整版廣播劇，含配音與音效，供角色聲音表情參考。</p>
+  </section>
+
+  <section class="card synopsis">
+    <h2>故事大綱</h2>
+    <p>蛀牙菌又來了！這次他們趁強強吃了軟糖，用黏黏的糖把自己牢牢固定在牙齒上，好不容易撐過刷牙和漱口，正要開心慶祝——卻被媽媽檢查時一眼識破，全數沖進下水道。</p>
+    <p>哭著漂流的蛀牙菌，來到一個人類進不去的神秘基地：「壞壞病菌派遣公司」。原來世界上所有的髒髒菌、鼻涕菌、眼屎菌、壞病毒，都是從這裡被派出去工作的，一年三百六十五天全年無休。失敗的蛀牙菌們被叫進老闆辦公室，本以為要挨罵，老闆卻傳授了他的獨門絕招——「卑鄙陰險」：躲進牙刷刷不到、檢查也看不見的牙縫裡！</p>
+    <p>隔天，學會新招的蛀牙菌信心滿滿地躲進強強的牙縫，還忍不住得意地喊起口號——沒想到強強聽得一清二楚，還從他們的鬥嘴中把藏身處問了出來。一句「媽媽～我的牙縫裡有蛀牙菌，要用牙線～」，讓蛀牙菌的完美陰謀再次泡湯。</p>
+  </section>
+
+  <section class="card">
+    <h2>登場角色</h2>
+    <ul class="chars">
+      <li><span class="dot germ"></span><span><b>蛀牙菌們（A～D）</b>主角反派團。努力、團結、忠心耿耿——可惜全用在蛀牙上。愛喊口號（「蛀牙！蛀牙！蛀牙！」），嘴硬心虛，一被識破就集體倒抽一口氣。</span></li>
+      <li><span class="dot boss"></span><span><b>老闆</b>壞壞病菌派遣公司的大魔王。笑聲浮誇、會突然變臉拍桌，戰績是躲在牙縫害一個小朋友看了七次牙醫。</span></li>
+      <li><span class="dot hero"></span><span><b>強強</b>本集的人類主角。聽得到蛀牙菌講話，天真的對話反而是最強武器，一句話就讓陰謀破功。</span></li>
+      <li><span class="dot mom"></span><span><b>媽媽</b>檢查牙齒的鷹眼，看一眼就發現沒刷乾淨的橘子軟糖，牙線的執行者。</span></li>
+      <li><span class="dot staff"></span><span><b>秘書與公司職員們</b>派遣公司的員工，登場自帶歌舞（「壞～壞～病～菌～派～遣～公～司～」）。</span></li>
+    </ul>
+  </section>
+
+  <details>
+    <summary>完整劇本<span class="toggle">點擊展開</span></summary>
+    <div class="script">
+      <p class="n">哈囉，我們來一起說故事囉！今天要說的故事叫做《強強與蛀牙菌2：蛀牙菌的陰謀》。</p>
+      <p class="n">大家聽過強強與蛀牙菌的故事嗎？蛀牙菌偷偷躲在強強的嘴巴裡，想要在他的牙齒上挖洞，還好有牙刷、牙膏和漱口杯的幫忙，強強才能把牙齒刷乾淨，趕走蛀牙菌。</p>
+      <p><span class="sp h">強強：</span>（漱口）咕嚕咕嚕咕嚕，呸～～</p>
+      <p><span class="sp g">眾蛀牙菌：</span>可惡～～～</p>
+      <p class="n">不過，難纏的蛀牙菌，每一天都還是會出現在強強的嘴巴裡。</p>
+      <p><span class="sp g">蛀牙菌A：</span>今天一定要躲好，不要再被刷掉了！</p>
+      <p><span class="sp g">蛀牙菌B：</span>剛好他今天有吃軟糖，我們可以用黏黏的軟糖把自己固定好，才不會被水沖走！</p>
+      <p><span class="sp g">眾蛀牙菌：</span>（此起彼落）說得沒錯！說得沒錯！真是個好機會！別小看我們蛀牙菌！</p>
+      <p class="n">蛀牙菌在強強的嘴巴裡跑來跑去，找到沾著黏黏軟糖的地方，然後——</p>
+      <p><span class="sp g">蛀牙菌A：</span>嘿！</p>
+      <p><span class="sp g">蛀牙菌B：</span>黏住了！</p>
+      <p><span class="sp g">蛀牙菌C：</span>我也黏住了！</p>
+      <p><span class="sp g">蛀牙菌D：</span>這下，就不用擔心了～～</p>
+      <p><span class="sp g">蛀牙菌A：</span>大家加油，等一下不管是被牙刷刷還是被水沖，都絕對不能放手～</p>
+      <p><span class="sp g">眾蛀牙菌：</span>沒問題～</p>
+      <p><span class="sp g">蛀牙菌A：</span>來～蛀牙菌～～～</p>
+      <p><span class="sp g">眾蛀牙菌：</span>蛀牙！蛀牙！蛀牙！</p>
+      <p class="n">那一天晚上，強強睡前刷牙的時候。</p>
+      <p><span class="sp g">蛀牙菌A：</span>哇～哇～哇～</p>
+      <p><span class="sp g">蛀牙菌B：</span>撐住啊⋯⋯</p>
+      <p><span class="sp g">蛀牙菌C：</span>快不行了⋯⋯</p>
+      <p><span class="sp g">蛀牙菌D：</span>加油～他快刷完了，再忍耐一下～</p>
+      <p><span class="sp h">強強：</span>（漱口）咕嚕咕嚕咕嚕，呸～～</p>
+      <p class="n">（水流走的聲音）強強刷完牙、漱完口，蛀牙菌張開眼睛，發現——（超感人、奧運奪冠可能會聽到的配樂）</p>
+      <p><span class="sp g">蛀牙菌A：</span>我們，（強忍淚水宣布）還黏在強強的牙齒上！！</p>
+      <p><span class="sp g">蛀牙菌B：</span>成功了～～～</p>
+      <p class="n">（眾蛀牙菌歡聲雷動）正當蛀牙菌開心地跳舞的時候，他們聽到一個奇怪的聲音⋯⋯（配樂結束）</p>
+      <p><span class="sp m">媽媽：</span>嗯？強強，你今天怎麼刷得這麼快？我來檢查一下喔⋯⋯</p>
+      <p class="n">（眾蛀牙菌倒抽一口氣）</p>
+      <p><span class="sp m">媽媽：</span>強強，嘴巴張開——</p>
+      <p><span class="sp g">蛀牙菌A：</span>強強，不要張開～</p>
+      <p><span class="sp h">強強：</span>啊——</p>
+      <p><span class="sp m">媽媽：</span>你看最後面那顆牙齒凹進去的地方，橘橘的是什麼？</p>
+      <p><span class="sp g">蛀牙菌B：</span>什麼也不是，強強的媽媽，你看錯了啦～</p>
+      <p><span class="sp h">強強：</span>（張著嘴巴說）那個應該是橘子軟糖</p>
+      <p><span class="sp m">媽媽：</span>對，橘子軟糖，你沒有刷乾淨喔，媽媽幫你重刷一遍～</p>
+      <p><span class="sp g">眾蛀牙菌：</span>救命啊～～～～</p>
+      <p><span class="sp h">強強：</span>（漱口）咕嚕咕嚕咕嚕，呸～～</p>
+      <p><span class="sp g">眾蛀牙菌：</span>可惡～～～～～</p>
+      <p class="n">那一天晚上，蛀牙菌還是跟以前一樣，通通被沖進下水道。</p>
+      <p><span class="sp g">眾蛀牙菌：</span>可惡～～～嗚嗚嗚</p>
+      <p class="n">蛀牙菌在水管裡，邊流邊哭，不知不覺，流到了一個黑漆漆的地方，那個地方非常的神秘，從來沒有人去過，那裡人類進不去，因為，那裡是——</p>
+      <p class="n">（歌舞片感）</p>
+      <p><span class="sp s">眾公司職員：</span>壞壞病菌派遣公司～</p>
+      <p><span class="sp s">公司職員A：</span>我們是誰</p>
+      <p><span class="sp s">眾公司職員：</span>壞壞病菌～壞壞病菌～</p>
+      <p><span class="sp s">公司職員A：</span>我們是誰</p>
+      <p class="n">職員分別有精神地回答：髒髒菌！蛀牙菌！鼻涕菌！眼屎菌！咳嗽發燒一整個星期的壞病毒～</p>
+      <p><span class="sp s">公司職員A：</span>我們就是～</p>
+      <p><span class="sp s">眾公司職員：</span>壞～壞～病～菌～派～遣～公～司～</p>
+      <p class="n">沒錯，這裡就是所有細菌跟病毒的大本營——壞壞病菌派遣公司。</p>
+      <p class="n">大家常常覺得很奇怪，為什麼明明有刷牙了，隔天卻還是有蛀牙菌、要再刷一次，或是，為什麼明明有洗手了，過了不久，爸爸媽媽卻又說手上有細菌，要再洗一次？原來，那就是因為壞壞病菌派遣公司動不動就會叫壞壞細菌和壞壞病毒去工作，讓各式各樣的病菌跑到大家的身體裡。壞壞病菌派遣公司每天都非常認真地派出細菌和病毒，一年三百六十五天都不會休息。</p>
+      <p class="n">蛀牙菌們被強強沖走之後，回到了壞壞細菌派遣公司。</p>
+      <p><span class="sp g">蛀牙菌A：</span>糟糕了⋯⋯</p>
+      <p><span class="sp g">蛀牙菌B：</span>今天又失敗了⋯⋯</p>
+      <p><span class="sp g">蛀牙菌C：</span>要被老闆罵了⋯⋯</p>
+      <p><span class="sp s">秘書：</span>蛀牙菌們</p>
+      <p class="n">（眾蛀牙菌嚇到彈起來）</p>
+      <p><span class="sp s">秘書：</span>請到老闆的辦公室一趟。</p>
+      <p><span class="sp g">眾蛀牙菌：</span>（孬）⋯⋯好！</p>
+      <p class="n">蛀牙菌們邊發抖邊走到了老闆的辦公室，他們緊張地推開門——</p>
+      <p><span class="sp b">老闆：</span>你們，又被強強打敗了嗎？</p>
+      <p class="n">蛀牙菌們立刻跪在地上，完全不敢抬頭</p>
+      <p><span class="sp g">蛀牙菌A：</span>對不起！</p>
+      <p><span class="sp g">蛀牙菌B：</span>我們失敗了！</p>
+      <p><span class="sp g">蛀牙菌C：</span>我們下次一定會再更努力的！</p>
+      <p><span class="sp b">老闆：</span>哇哈哈哈哈哈哈，你們真是努力的蛀牙菌啊⋯⋯</p>
+      <p class="n">蛀牙菌們有一點點高興，但是，老闆立刻變臉，他重重地拍了桌子</p>
+      <p><span class="sp b">老闆：</span>只有努力，是不夠的！我們身為細菌，當然要懂得卑鄙陰險的招式啊～啊哈哈哈哈哈</p>
+      <p><span class="sp g">蛀牙菌A：</span>卑鄙陰險？</p>
+      <p><span class="sp g">蛀牙菌B：</span>那是什麼意思？</p>
+      <p><span class="sp g">蛀牙菌C：</span>不知道</p>
+      <p><span class="sp b">老闆：</span>你們連卑鄙陰險都不知道？我的天哪！卑鄙陰險就是，我們要很壞！可是⋯⋯要壞得讓別人沒辦法發現⋯⋯呃呵呵呵呵呵呵呵</p>
+      <p><span class="sp g">眾蛀牙菌：</span>呵呵呵呵呵</p>
+      <p class="n">蛀牙菌根本就聽不懂，但還是跟著笑了</p>
+      <p><span class="sp g">蛀牙菌A：</span>這個，老闆啊，你有什麼特別卑鄙陰險的招式嗎？</p>
+      <p><span class="sp b">老闆：</span>這個嘛，呵呵呵呵呵，那就是——躲在牙齒的縫隙裡！</p>
+      <p><span class="sp g">眾蛀牙菌：</span>什麼！</p>
+      <p class="n">老闆說，不管是牙齒的外面、裡面還是咬合面，都很容易被牙刷刷到，就算辛辛苦苦黏在上面，也很容易在檢查的時候被發現。</p>
+      <p><span class="sp b">老闆：</span>但是，牙齒的縫隙呵呵呵呵呵，那是最安全最安全的地方了～</p>
+      <p class="n">老闆說，他曾經躲在一個小朋友牙齒的縫隙裡很久，連小朋友的爸爸媽媽都沒發現，等到小朋友開始牙痛，牙醫才發現，雖然牙齒外面看起來很健康，但是，（忍不住笑）縫縫的部分，早就蛀牙了。</p>
+      <p><span class="sp b">老闆：</span>（恢復恐怖）蛀得很深很深，那個小朋友，去看了七次牙醫才把蛀牙治好，哇哈哈哈哈哈</p>
+      <p><span class="sp g">蛀牙菌A：</span>老闆真是太厲害了！</p>
+      <p><span class="sp g">蛀牙菌B：</span>我們就應該向老闆學習！</p>
+      <p><span class="sp g">蛀牙菌C：</span>沒錯沒錯！</p>
+      <p><span class="sp g">蛀牙菌D：</span>強強，你等著瞧吧～</p>
+      <p><span class="sp x">眾蛀牙菌＋老闆：</span>咿嘻嘻嘻嘻嘻</p>
+      <p class="n">隔天，蛀牙菌們又偷偷地跑到了強強的嘴巴裡，到了刷牙時間，蛀牙菌們有點緊張，但是他們彼此加油打氣。</p>
+      <p><span class="sp g">蛀牙菌A：</span>大家，記得，我們要卑鄙陰險！</p>
+      <p><span class="sp g">蛀牙菌B：</span>沒錯，要學習當最棒的壞壞細菌！</p>
+      <p><span class="sp g">蛀牙菌C：</span>強強一定刷不到我們的！</p>
+      <p><span class="sp g">蛀牙菌D：</span>因為我們躲在牙縫裡呀～</p>
+      <p><span class="sp g">蛀牙菌A：</span>蛀牙菌～</p>
+      <p><span class="sp g">眾蛀牙菌：</span>蛀牙！蛀牙！蛀牙！</p>
+      <p><span class="sp h">強強：</span>咦？那是什麼聲音？</p>
+      <p class="n">（眾蛀牙菌倒抽一口氣）</p>
+      <p><span class="sp g">蛀牙菌A：</span>他不可能聽到我們講話吧？</p>
+      <p><span class="sp h">強強：</span>為什麼不可能？</p>
+      <p><span class="sp g">蛀牙菌B：</span>因為我們是蛀牙菌啊！</p>
+      <p><span class="sp h">強強：</span>可是我就是聽得到啊！</p>
+      <p><span class="sp g">蛀牙菌C：</span>可是我們躲在牙縫裡啊！</p>
+      <p><span class="sp h">強強：</span>蛤！你們躲在牙縫喔！</p>
+      <p><span class="sp g">蛀牙菌D：</span>對、對呀！刷不到吧！ㄌㄩㄝㄌㄩㄝㄌㄩㄝㄌㄩㄝ</p>
+      <p><span class="sp h">強強：</span>媽媽～～我的牙縫裡有蛀牙菌，要用牙線～</p>
+      <p class="n">（眾蛀牙菌倒抽一口氣）</p>
+      <p><span class="sp m">媽媽：</span>好～來，嘴巴張開</p>
+      <p><span class="sp g">眾蛀牙菌：</span>不要～～～～</p>
+      <p><span class="sp h">強強：</span>啊——</p>
+      <p class="n">那一天，強強刷完牙、用了牙線、漱了口，（強強：咕嚕咕嚕呸）嘴巴又變得乾乾淨淨了。</p>
+      <p><span class="sp g">眾蛀牙菌：</span>可～～～～惡～～～～～</p>
+      <p class="n">這就是今天的故事《強強與蛀牙菌2：蛀牙菌的陰謀》，感謝 Ollie 的提供喔！</p>
+    </div>
+  </details>
+
+  <footer>
+    <div class="logo">一起說故事</div>
+    本頁內容僅供合作繪者參考，請勿轉載或公開分享。<br>
+    © 一暝大一寸有限公司
+  </footer>
+
+</div>
+</body>
+</html>
