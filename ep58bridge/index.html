@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>彩色的橋｜一起說故事 EP58 繪者參考</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sky:#DCE9EC;
+    --sky-deep:#C3D9DF;
+    --paper:#FDFBF3;
+    --ink:#3A362E;
+    --dog:#3E8CA3;      /* 汪汪・藍 */
+    --chick:#C29A1F;    /* 小雞・黃 */
+    --croc:#5F9455;     /* 鱷魚・綠 */
+    --orang:#C9683A;    /* 紅毛猩猩・紅橘 */
+    --goat:#8A8273;     /* 山羊・灰白 */
+    --misc:#7A6FA0;     /* 燕子、螢火蟲等 */
+    --line:#E4DECB;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--sky);
+    color:var(--ink);
+    font-family:'Noto Sans TC',sans-serif;
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:28px 20px 60px;}
+
+  .cover{
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(58,54,46,.15);
+    border:6px solid var(--paper);
+  }
+  .cover img{display:block;width:100%;height:auto;}
+
+  header{margin:26px 0 8px;}
+  .eyebrow{
+    font-family:'LXGW WenKai TC',serif;
+    letter-spacing:.35em;
+    font-size:.85rem;
+    opacity:.65;
+  }
+  h1{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:2.1rem;
+    line-height:1.4;
+    margin-top:4px;
+  }
+  h1 .c1{color:var(--dog);}
+  h1 .c2{color:var(--chick);}
+  h1 .c3{color:var(--croc);}
+  h1 .c4{color:var(--orang);}
+  .meta{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:3px 14px;
+    font-size:.82rem;
+  }
+
+  .card{
+    background:var(--paper);
+    border-radius:16px;
+    padding:22px 22px;
+    margin-top:22px;
+    box-shadow:0 4px 14px rgba(58,54,46,.07);
+  }
+  .card h2{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1.25rem;
+    margin-bottom:12px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .card h2::before{
+    content:"";
+    width:14px;height:14px;
+    border-radius:50%;
+    background:var(--sky-deep);
+    border:2px solid var(--ink);
+    flex:none;
+  }
+
+  audio{width:100%;margin-top:4px;}
+  .audio-note{font-size:.8rem;opacity:.6;margin-top:8px;}
+
+  .synopsis p{margin-bottom:1em;}
+  .synopsis p:last-child{margin-bottom:0;}
+
+  .chars{list-style:none;display:grid;gap:10px;}
+  .chars li{display:flex;gap:12px;align-items:baseline;}
+  .dot{
+    width:12px;height:12px;border-radius:50%;
+    flex:none;position:relative;top:1px;
+  }
+  .dot.dog{background:var(--dog);}
+  .dot.chick{background:#F2D060;border:1.5px solid var(--chick);}
+  .dot.croc{background:var(--croc);}
+  .dot.orang{background:var(--orang);}
+  .dot.goat{background:#EFEAE0;border:1.5px solid var(--goat);}
+  .dot.misc{background:var(--misc);}
+  .chars b{font-family:'LXGW WenKai TC',serif;font-size:1.05rem;margin-right:6px;}
+
+  details{margin-top:22px;}
+  details summary{
+    list-style:none;
+    cursor:pointer;
+    background:var(--paper);
+    border-radius:16px;
+    padding:18px 22px;
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1.25rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:0 4px 14px rgba(58,54,46,.07);
+    user-select:none;
+  }
+  details summary::-webkit-details-marker{display:none;}
+  details summary .toggle{
+    font-family:'Noto Sans TC',sans-serif;
+    font-size:.8rem;
+    background:var(--sky-deep);
+    border-radius:999px;
+    padding:3px 12px;
+  }
+  details[open] summary{border-radius:16px 16px 0 0;}
+  details .script{
+    background:var(--paper);
+    border-top:1px dashed var(--line);
+    border-radius:0 0 16px 16px;
+    padding:24px 22px 28px;
+    box-shadow:0 4px 14px rgba(58,54,46,.07);
+    font-size:.95rem;
+  }
+  .script p{margin-bottom:1.1em;}
+  .script p.n{opacity:.85;}
+  .script .sp{
+    font-family:'LXGW WenKai TC',serif;
+    font-weight:700;
+    margin-right:.4em;
+    white-space:nowrap;
+  }
+  .sp.d{color:var(--dog);}
+  .sp.k{color:var(--chick);}
+  .sp.c{color:var(--croc);}
+  .sp.o{color:var(--orang);}
+  .sp.g{color:var(--goat);}
+  .sp.m{color:var(--misc);}
+  .sp.x{color:var(--ink);}
+
+  footer{
+    margin-top:40px;
+    text-align:center;
+    font-size:.8rem;
+    opacity:.6;
+    line-height:1.7;
+  }
+  footer .logo{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1rem;
+    letter-spacing:.2em;
+    opacity:.9;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="cover"><img src="cover.jpg" alt="彩色的橋 封面：小狗、小雞、鱷魚、紅毛猩猩和小山羊走在一座彩色木板吊橋上"></div>
+
+  <header>
+    <div class="eyebrow">一起說故事・繪者合作參考</div>
+    <h1><span class="c1">彩</span><span class="c2">色</span><span class="c3">的</span><span class="c4">橋</span></h1>
+    <div class="meta">
+      <span class="chip">EP58</span>
+      <span class="chip">廣播劇約 10 分鐘</span>
+      <span class="chip">改編自阿等《藍色的橋》</span>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>廣播劇音檔</h2>
+    <audio controls preload="metadata" src="audio.mp3"></audio>
+    <p class="audio-note">完整版廣播劇，含配音與音效，供角色聲音表情參考。</p>
+  </section>
+
+  <section class="card synopsis">
+    <h2>故事大綱</h2>
+    <p>小狗汪汪住在大海旁邊的藍色小房子裡，他最喜歡藍色了——家裡的床、桌椅、沙發全都是藍色的。有一天，門口突然出現一座黃色的橋，汪汪提著藍色油漆想把它漆成藍色，卻被蓋橋的小雞攔了下來。</p>
+    <p>為了找到一座藍色的橋，汪汪沿著河往上游走：沼澤裡有鱷魚的綠色橋、叢林裡有紅毛猩猩的紅色橋，每一座都是主人自己喜歡的顏色，誰也不肯讓汪汪亂漆。一路上還加入了好奇的燕子和螢火蟲，隊伍越走越熱鬧。</p>
+    <p>走到山上，他們終於看到一座白色的橋——卻已經被湍急的河水沖斷了！河邊的小山羊回不了家，急得大哭。天黑了，大家決定一起動手：螢火蟲照亮、紅毛猩猩搬木頭、鱷魚咬斷木材、汪汪和小雞綁繩子、燕子飛越河面牽線……一整晚的合作之後，一座堅固的吊橋完成了。最後大家各自漆上自己喜歡的顏色，這座橋，就成了世界上最漂亮的彩色的橋。</p>
+  </section>
+
+  <section class="card">
+    <h2>登場角色</h2>
+    <ul class="chars">
+      <li><span class="dot dog"></span><span><b>汪汪</b>小狗，主角。住在海邊藍色小屋，狂熱地喜歡藍色，隨身帶著一桶藍色油漆。</span></li>
+      <li><span class="dot chick"></span><span><b>小雞</b>黃色橋的主人，第一個攔下汪汪，也是第一個陪他上路的夥伴。</span></li>
+      <li><span class="dot croc"></span><span><b>鱷魚</b>綠色橋的主人，大嘴巴尖牙齒看起來嚇人，其實很熱心，蓋橋時負責咬斷木材。</span></li>
+      <li><span class="dot orang"></span><span><b>紅毛猩猩</b>紅色橋的主人，直話直說（「你想要藍色的橋就自己蓋呀！」），力氣大，負責搬木頭。</span></li>
+      <li><span class="dot goat"></span><span><b>小山羊與山羊媽媽</b>被斷橋隔在河兩邊的母子，白色橋的使用者。</span></li>
+      <li><span class="dot misc"></span><span><b>燕子們、螢火蟲們</b>路上加入的飛行組，沒看過橋的螢火蟲負責照明、燕子負責把繩子帶過河。</span></li>
+    </ul>
+  </section>
+
+  <details>
+    <summary>完整劇本<span class="toggle">點擊展開</span></summary>
+    <div class="script">
+      <p class="n">哈囉，我們來一起說故事囉！今天要說的故事叫做《彩色的橋》，改編自阿等的《藍色的橋》。</p>
+      <p class="n">（海鷗聲、舒緩的海浪聲）</p>
+      <p class="n">在一片藍色的大海旁邊，有一棟藍色的小房子，小房子裡住著一隻小狗，他叫做汪汪。汪汪最喜歡藍色了，因為那是大海的顏色，也是天空的顏色，只要看到藍色，汪汪就會很開心，所以他家裡的床、桌子還有椅子跟沙發，全部都是藍色的。</p>
+      <p class="n">有一天，汪汪拉開他的藍色窗簾，看向窗外，卻發現——</p>
+      <p><span class="sp d">汪汪：</span>咦！那裡怎麼多了一座黃色的橋！？</p>
+      <p class="n">汪汪提著一桶藍色的油漆走到橋邊，他想要把黃色的橋變成藍色的，就在汪汪要漆下去的時候——</p>
+      <p><span class="sp k">小雞：</span>等一下！你在做什麼！？</p>
+      <p class="n">小雞叫住了汪汪。</p>
+      <p><span class="sp d">汪汪：</span>我想要把這座橋漆成藍色的，這樣比較漂亮。</p>
+      <p><span class="sp k">小雞：</span>可是這座橋是我蓋的啊，你不能亂漆！</p>
+      <p><span class="sp d">汪汪：</span>蛤～～～～可是我真的好想要一座藍色的橋！</p>
+      <p class="n">汪汪之前從來沒想過他要有一座橋，可是，當他看到小雞有黃色的橋的時候，他就也好想要有藍色的橋。</p>
+      <p><span class="sp k">小雞：</span>沿著這條河往上游走，我記得有別座橋，說不定是藍色的喔！走吧！我陪你去找。</p>
+      <p class="n">於是，汪汪和小雞離開了海邊，他們沿著河往上游走，走到一片沼澤，在那裡，他們看到了——</p>
+      <p><span class="sp k">小雞：</span>你看！是橋！</p>
+      <p><span class="sp d">汪汪：</span>可是是綠色的⋯⋯還好我帶著油漆！</p>
+      <p class="n">就在汪汪要把藍色油漆漆到綠色橋上的時候——</p>
+      <p><span class="sp c">鱷魚：</span>等一下！你在做什麼！？</p>
+      <p class="n">鱷魚叫住了汪汪。</p>
+      <p><span class="sp d">汪汪：</span>我、我、我、我想要把這座橋⋯⋯漆成藍色的，這樣比較漂亮。</p>
+      <p class="n">鱷魚大大的嘴巴裡有著尖尖的牙齒，汪汪覺得好害怕，但他還是勇敢地說出他想要一座藍色的橋。</p>
+      <p><span class="sp c">鱷魚：</span>可是這座橋是我蓋的啊，你不能亂漆！不過，再往上游走，有別座橋，說不定是藍色的喔！</p>
+      <p class="n">於是，汪汪、小雞還有鱷魚離開了沼澤，他們沿著河往上游走，走到一片叢林，在那裡，他們看到了——</p>
+      <p><span class="sp x">小雞、鱷魚：</span>你看！是橋！</p>
+      <p><span class="sp d">汪汪：</span>可是是紅色的⋯⋯還好我帶著油漆！</p>
+      <p><span class="sp k">小雞：</span>你不要又亂漆啦！</p>
+      <p><span class="sp c">鱷魚：</span>對啊，要問問看這是誰的橋！</p>
+      <p class="n">一隻紅毛猩猩從樹上爬下來。</p>
+      <p><span class="sp o">紅毛猩猩：</span>喔，這是我的橋啊！怎麼了嗎？</p>
+      <p><span class="sp d">汪汪：</span>我可以把它漆成藍色的嗎？</p>
+      <p><span class="sp o">紅毛猩猩：</span>不行啊！我就是喜歡紅色，我才會蓋紅色的橋啊！你想要藍色的橋，那你就自己蓋呀！</p>
+      <p><span class="sp d">汪汪：</span>可是我們家門口沒有地方給我蓋橋，我真的好想要藍色的橋啦～～～你們誰的橋給我漆成藍色的嘛～～</p>
+      <p class="n">汪汪躺在地上耍賴，但是小雞、鱷魚還有紅毛猩猩還是鼓勵他</p>
+      <p><span class="sp k">小雞：</span>我們再往上游走走看吧！</p>
+      <p><span class="sp c">鱷魚：</span>說不定有橋喔！</p>
+      <p><span class="sp o">紅毛猩猩：</span>說不定是藍色的喔！</p>
+      <p class="n">汪汪只好站起來繼續走。他們走了好久好久，在路上遇到了好多燕子和螢火蟲。</p>
+      <p><span class="sp m">燕子：</span>小狗、小雞、鱷魚還有紅毛猩猩，這是什麼奇怪的組合啊？</p>
+      <p><span class="sp m">螢火蟲A：</span>你們在做什麼呢？</p>
+      <p><span class="sp d">汪汪：</span>我們在找藍色的橋啊！</p>
+      <p><span class="sp m">螢火蟲B：</span>橋？那是什麼東西？</p>
+      <p><span class="sp m">螢火蟲C：</span>不知道，沒聽過。</p>
+      <p><span class="sp d">汪汪：</span>橋就是⋯⋯就是如果有一條河在中間，我們走不過去，游泳又太累或是太危險的話，就要蓋橋，這樣就可以走橋上面過去啊！</p>
+      <p><span class="sp m">螢火蟲A：</span>喔，難怪我們沒聽過</p>
+      <p><span class="sp m">螢火蟲B：</span>因為我們用飛的就好，不用走路～嘿嘿</p>
+      <p><span class="sp m">螢火蟲C：</span>不過我們也好想看看橋長什麼樣子喔，我們可以一起去看看嗎？</p>
+      <p><span class="sp d">汪汪：</span>當然可以啊！</p>
+      <p class="n">就這樣，汪汪、小雞、鱷魚還有紅毛猩猩繼續往河流的上游走，燕子和螢火蟲也用飛的跟在旁邊，他們一直走一直走、一直飛一直飛，最後，到了山上，在那裡，他們看到了——</p>
+      <p class="n">（湍流水聲）</p>
+      <p><span class="sp x">小雞、鱷魚、紅毛猩猩：</span>你看！是橋！</p>
+      <p><span class="sp d">汪汪：</span>可是是白色的，而且⋯⋯而且！它快斷了！！</p>
+      <p class="n">沒錯，山上的水流太強了，河流的水一直沖一直沖，白色小橋就這樣被水沖斷了！</p>
+      <p><span class="sp g">小山羊：</span>（爆哭）哇啊～～媽媽～～～～～</p>
+      <p class="n">有一隻小山羊站在河的這一邊大哭，他想要走到河的另外一邊。</p>
+      <p><span class="sp g">山羊媽媽：</span>小山羊你不要急，現在很危險，你不要跑到水裡！你在那邊等一下，媽媽找人來把橋修好！</p>
+      <p class="n">山羊媽媽站在河的另一邊，她很擔心，要是小山羊跑到河裡，就會被水沖走！可是，太陽下山了，天空變得越來越黑，小山羊好害怕</p>
+      <p><span class="sp g">小山羊：</span>媽媽～～～～</p>
+      <p><span class="sp d">汪汪：</span>小山羊好可憐，我們來幫忙他吧！</p>
+      <p class="n">於是，汪汪他們就開始蓋橋。螢火蟲發著光飛來飛去，他們幫忙把路照亮。</p>
+      <p><span class="sp m">眾螢火蟲：</span>嘿～嘿～飛飛飛～</p>
+      <p class="n">紅毛猩猩搬來了很多很多木頭。</p>
+      <p><span class="sp o">紅毛猩猩：</span>嘿咻！</p>
+      <p class="n">鱷魚張大嘴巴，用尖尖的牙齒咬下，把木頭切成一段一段的。</p>
+      <p><span class="sp c">鱷魚：</span>啊！啊！啊！</p>
+      <p class="n">然後小雞和汪汪找來了很多繩子，他們用繩子牢牢地綁住每一塊木頭。</p>
+      <p><span class="sp k">小雞：</span>來！</p>
+      <p><span class="sp d">汪汪：</span>嘿咻～</p>
+      <p class="n">然後，燕子們咬著繩子，飛去河的另一邊。</p>
+      <p><span class="sp m">燕子A：</span>嗚⋯⋯好重啊～</p>
+      <p><span class="sp m">燕子B：</span>加油！加油！</p>
+      <p><span class="sp m">燕子C：</span>快到了！</p>
+      <p class="n">最後，山羊媽媽拉著繩子，綁在柱子上面。太陽出來了，經過一整個晚上的努力，堅固的吊橋終於完成了！小山羊跑過吊橋，抱著山羊媽媽。</p>
+      <p><span class="sp g">小山羊：</span>媽媽～～～</p>
+      <p><span class="sp g">山羊媽媽：</span>沒事了，沒事了。汪汪，真是謝謝你們！</p>
+      <p><span class="sp d">汪汪：</span>不客氣～</p>
+      <p><span class="sp g">小山羊：</span>那我們可以幫橋塗顏色嗎？</p>
+      <p><span class="sp g">山羊媽媽：</span>可以啊，你想塗什麼顏色呢？</p>
+      <p><span class="sp g">小山羊：</span>我想塗白色！那你們呢？汪汪？</p>
+      <p><span class="sp d">汪汪：</span>我？我想塗藍色！！</p>
+      <p><span class="sp k">小雞：</span>我想要黃色！</p>
+      <p><span class="sp c">鱷魚：</span>綠色！</p>
+      <p><span class="sp o">紅毛猩猩：</span>紅色！</p>
+      <p class="n">就這樣，小山羊、汪汪、小雞還有鱷魚和紅毛猩猩一起，把這座橋漆上各種顏色。雖然最後小狗汪汪還是沒有一整座藍色的橋，但是他更喜歡這座和好朋友一起蓋的橋。他們會約好一起在這裡玩、一起保護這座橋，如果以後有新的朋友，他們也可以在橋上漆自己喜歡的顏色，這樣，這座橋就會變成世界上最漂亮的彩色的橋。</p>
+      <p class="n">這就是今天的故事《彩色的橋》，感謝阿等的提供喔！</p>
+    </div>
+  </details>
+
+  <footer>
+    <div class="logo">一起說故事</div>
+    本頁內容僅供合作繪者參考，請勿轉載或公開分享。<br>
+    © 一暝大一寸有限公司
+  </footer>
+
+</div>
+</body>
+</html>
