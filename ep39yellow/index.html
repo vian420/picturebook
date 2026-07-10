@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小黃點出任務｜一起說故事 EP39 繪者參考</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night:#3B3F60;
+    --night-deep:#2E3250;
+    --paper:#FDFBF3;
+    --ink:#33301F;
+    --moonlight:#EFD9A0;
+    --yellow:#BC941A;   /* 小黃點 */
+    --blue:#3E6FA8;     /* 小藍點 */
+    --red:#C05248;      /* 小紅點 */
+    --king:#7A5CA8;     /* 國王 */
+    --kid:#C4708F;      /* 小寶與小孩們 */
+    --parent:#6E6658;   /* 爸爸媽媽 */
+    --line:#E4DBC4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--night);
+    color:var(--ink);
+    font-family:'Noto Sans TC',sans-serif;
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:28px 20px 60px;}
+
+  .cover{
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+    border:6px solid var(--paper);
+  }
+  .cover img{display:block;width:100%;height:auto;}
+
+  header{margin:26px 0 8px;}
+  .eyebrow{
+    font-family:'LXGW WenKai TC',serif;
+    letter-spacing:.35em;
+    font-size:.85rem;
+    color:var(--moonlight);
+    opacity:.8;
+  }
+  h1{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:2.1rem;
+    line-height:1.4;
+    margin-top:4px;
+    color:#EDBE4A;
+  }
+  .meta{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:999px;
+    padding:3px 14px;
+    font-size:.82rem;
+  }
+
+  .card{
+    background:var(--paper);
+    border-radius:16px;
+    padding:22px 22px;
+    margin-top:22px;
+    box-shadow:0 6px 18px rgba(0,0,0,.25);
+  }
+  .card h2{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1.25rem;
+    margin-bottom:12px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .card h2::before{
+    content:"";
+    width:14px;height:14px;
+    border-radius:50%;
+    background:#EDBE4A;
+    border:2px solid var(--ink);
+    flex:none;
+  }
+
+  audio{width:100%;margin-top:4px;}
+  .audio-note{font-size:.8rem;opacity:.6;margin-top:8px;}
+
+  .synopsis p{margin-bottom:1em;}
+  .synopsis p:last-child{margin-bottom:0;}
+
+  .chars{list-style:none;display:grid;gap:10px;}
+  .chars li{display:flex;gap:12px;align-items:baseline;}
+  .dot{
+    width:12px;height:12px;border-radius:50%;
+    flex:none;position:relative;top:1px;
+  }
+  .dot.yellow{background:#F2CB4E;border:1.5px solid var(--yellow);}
+  .dot.king{background:var(--king);}
+  .dot.kid{background:var(--kid);}
+  .dot.parent{background:var(--parent);}
+  .dot.bluered{background:linear-gradient(90deg,var(--blue) 50%,var(--red) 50%);}
+  .chars b{font-family:'LXGW WenKai TC',serif;font-size:1.05rem;margin-right:6px;}
+
+  details{margin-top:22px;}
+  details summary{
+    list-style:none;
+    cursor:pointer;
+    background:var(--paper);
+    border-radius:16px;
+    padding:18px 22px;
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1.25rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    box-shadow:0 6px 18px rgba(0,0,0,.25);
+    user-select:none;
+  }
+  details summary::-webkit-details-marker{display:none;}
+  details summary .toggle{
+    font-family:'Noto Sans TC',sans-serif;
+    font-size:.8rem;
+    background:#EFE3BC;
+    border-radius:999px;
+    padding:3px 12px;
+  }
+  details[open] summary{border-radius:16px 16px 0 0;}
+  details .script{
+    background:var(--paper);
+    border-top:1px dashed var(--line);
+    border-radius:0 0 16px 16px;
+    padding:24px 22px 28px;
+    box-shadow:0 6px 18px rgba(0,0,0,.25);
+    font-size:.95rem;
+  }
+  .script p{margin-bottom:1.1em;}
+  .script p.n{opacity:.85;}
+  .script .sp{
+    font-family:'LXGW WenKai TC',serif;
+    font-weight:700;
+    margin-right:.4em;
+    white-space:nowrap;
+  }
+  .sp.y{color:var(--yellow);}
+  .sp.bl{color:var(--blue);}
+  .sp.r{color:var(--red);}
+  .sp.kg{color:var(--king);}
+  .sp.kd{color:var(--kid);}
+  .sp.p{color:var(--parent);}
+  .sp.x{color:var(--ink);}
+
+  footer{
+    margin-top:40px;
+    text-align:center;
+    font-size:.8rem;
+    color:var(--moonlight);
+    opacity:.75;
+    line-height:1.7;
+  }
+  footer .logo{
+    font-family:'LXGW WenKai TC',serif;
+    font-size:1rem;
+    letter-spacing:.2em;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="cover"><img src="cover.jpg" alt="小黃點出任務 封面：深藍夜空下，一群小黃點從雲朵溜下金黃色的滑道，落向夜晚的城市"></div>
+
+  <header>
+    <div class="eyebrow">一起說故事・繪者合作參考</div>
+    <h1>小黃點出任務</h1>
+    <div class="meta">
+      <span class="chip">EP39</span>
+      <span class="chip">廣播劇約 8 分鐘</span>
+      <span class="chip">改編自羱璁《小黃點出任務》</span>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>廣播劇音檔</h2>
+    <audio controls preload="metadata" src="audio.mp3"></audio>
+    <p class="audio-note">完整版廣播劇，含配音與音效，供角色聲音表情參考。</p>
+  </section>
+
+  <section class="card synopsis">
+    <h2>故事大綱</h2>
+    <p>在很高很遠的天空上，有一個色彩王國，住著數不清的顏色點點。國王每天指派任務：小藍點把大海染藍、小紅點把鍋裡的螃蟹煮成好吃的紅色……世界上的每一個顏色，都是點點們認真工作的成果。</p>
+    <p>某天晚上，全王國都睡了，只有調皮的小黃點們躲在棉被裡聊天，越聊越興奮，決定偷偷溜下去玩——想變成什麼，就變成什麼！他們變成床單上的尿尿、衣服上的咖哩、滴在書上的芒果汁、噴到牆壁的水彩，把小寶和其他小朋友的家搞得一團亂。孩子們花了一整個下午擦洗，氣得大喊：「我最討厭黃色了！」</p>
+    <p>被討厭的小黃點們難過地飛回色彩王國，覺得自己不該再下去玩了。國王沒有責罵，只是揮揮手：小黃點跳進稻田，農夫看著金黃的收成笑了；跳上行道樹，整條街的人停下來拍照；最後飛進小寶床頭的小燈裡——原來，用對地方的黃色，是能讓人安心睡著的溫柔顏色。</p>
+  </section>
+
+  <section class="card">
+    <h2>登場角色</h2>
+    <ul class="chars">
+      <li><span class="dot yellow"></span><span><b>小黃點們</b>主角群（A、B、C 加一大群）。調皮愛玩、嘰嘰喳喳，闖了大禍也會真心難過，是一群需要被引導的孩子。</span></li>
+      <li><span class="dot king"></span><span><b>國王</b>色彩王國的統治者。每天指派染色任務，對小黃點的失控不責備，而是示範黃色可以去哪裡發光。</span></li>
+      <li><span class="dot kid"></span><span><b>小寶與小朋友們</b>地面上的受害者，尿床、咖哩衣、芒果牙全包，氣到宣布討厭黃色，最後在黃色小燈下睡著。</span></li>
+      <li><span class="dot parent"></span><span><b>爸爸媽媽們</b>忍耐力驚人的大人，一邊倒抽一口氣一邊壓抑憤怒：「小、心、一、點！」</span></li>
+      <li><span class="dot bluered"></span><span><b>小藍點、小紅點、官員、農夫、路人</b>色彩王國的其他成員與地面配角，展現點點們平常的工作日常。</span></li>
+    </ul>
+  </section>
+
+  <details>
+    <summary>完整劇本<span class="toggle">點擊展開</span></summary>
+    <div class="script">
+      <p class="n">哈囉，我們來一起說故事囉！今天要說的故事叫做《小黃點出任務》，改編自羱璁的《小黃點出任務》。</p>
+      <p class="n">在很高很高、很遠很遠的天空上，有一個色彩王國，在那裡，有各式各樣數不清的顏色點點。色彩王國的國王每天都會叫各種顏色的點點去出任務。</p>
+      <p><span class="sp kg">國王：</span>今天大海的顏色不夠藍，來吧！小藍點，集合！</p>
+      <p><span class="sp bl">小藍點們：</span>嘿咻嘿咻嘿咻，集合～完畢！</p>
+      <p><span class="sp kg">國王：</span>小藍點，請把大海染成漂亮的藍色吧！</p>
+      <p><span class="sp bl">小藍點們：</span>遵命～～</p>
+      <p class="n">一百個小藍點跳進海裡面，把海水變成漂亮的藍色。</p>
+      <p><span class="sp kg">國王：</span>嗯，不錯不錯。（嗅嗅）這是什麼味道？好香啊！</p>
+      <p><span class="sp x">官員：</span>報告國王，是小寶的媽媽正在煮螃蟹。</p>
+      <p><span class="sp kg">國王：</span>哇，真不錯。小紅點，集合！</p>
+      <p><span class="sp r">小紅點們：</span>嘿咻嘿咻嘿咻，集合～完畢！</p>
+      <p><span class="sp kg">國王：</span>小紅點，請把鍋子裡的螃蟹變成好吃的紅色吧！</p>
+      <p><span class="sp r">小紅點們：</span>遵命～～</p>
+      <p class="n">二十個小紅點跳到鍋子裡面，小寶的媽媽掀開鍋蓋，看到螃蟹變成漂亮的紅色。</p>
+      <p><span class="sp kd">小寶：</span>哇！我要吃我要吃！肚子餓扁了⋯⋯</p>
+      <p class="n">就這樣，色彩王國的國王還有各種顏色的點點每天都很忙碌，等到晚上，太陽下山，黑到什麼東西都看不到的時候，國王會說</p>
+      <p><span class="sp kg">國王：</span>（呵欠）大家上床休息吧！明天還要工作一整天呢！</p>
+      <p><span class="sp x">眾人：</span>遵命～（呵欠）晚安</p>
+      <p class="n">所有的顏色點點都睡著了，但是，調皮的小黃點們還醒著，他們蓋著棉被，偷偷聊天。</p>
+      <p><span class="sp y">小黃點A：</span>我今天變成好吃的香蕉喔！</p>
+      <p><span class="sp y">小黃點B：</span>那有什麼了不起的，我今天變成好玩的溜滑梯！</p>
+      <p><span class="sp y">小黃點C：</span>那也還好吧！我今天，變成公主頭上的皇冠喔！</p>
+      <p><span class="sp y">眾小黃點：</span>哇～～</p>
+      <p class="n">小黃點們嘰嘰喳喳地講個不停，突然，有一個小黃點說</p>
+      <p><span class="sp y">小黃點A：</span>欸，我們現在偷偷跑出去玩，想變成什麼，就變成什麼！</p>
+      <p><span class="sp y">眾小黃點：</span>好啊好啊～耶～</p>
+      <p class="n">於是，所有的小黃點趁著大家睡著的時候，跳下去玩了。</p>
+      <p class="n">第二天早上。</p>
+      <p><span class="sp kd">小寶＆眾小孩：</span>（爆哭）嗚啊～～～～</p>
+      <p><span class="sp p">爸媽們：</span>怎麼了？哎唷！怎麼尿床了呢？</p>
+      <p class="n">原來，小黃點變成床單上的尿尿了！小朋友的爸爸媽媽辛辛苦苦地把床單上的小黃點全部都洗掉，小黃點們就快要流進水管裡了，但是他們還不想回家。有一個小黃點學國王講話。</p>
+      <p><span class="sp y">小黃點A：</span>小黃點們，集合～</p>
+      <p><span class="sp y">小黃點們：</span>嘿咻嘿咻嘿咻，集合～完畢！</p>
+      <p><span class="sp y">小黃點A：</span>好，那就⋯⋯出任務吧～～</p>
+      <p><span class="sp y">小黃點B：</span>請問，要去把什麼東西變成黃色呢？</p>
+      <p><span class="sp y">小黃點A：</span>呃⋯⋯這個嘛，大家自己決定！</p>
+      <p><span class="sp y">小黃點們：</span>耶呼～～</p>
+      <p class="n">所有的小黃點跑來跑去，把各種東西變成黃色。</p>
+      <p><span class="sp y">小黃點A：</span>誒嘿～</p>
+      <p class="n">（噴濺聲）</p>
+      <p><span class="sp kd">小寶：</span>哎唷，媽媽～我的衣服沾到咖哩了！</p>
+      <p><span class="sp y">小黃點B：</span>唷齁～</p>
+      <p class="n">（咀嚼聲）</p>
+      <p><span class="sp kd">小寶：</span>爸爸你看我整個牙齒都是芒果汁！</p>
+      <p><span class="sp y">小黃點C：</span>噫嘻嘻嘻嘻嘻～</p>
+      <p class="n">（滴落聲）</p>
+      <p><span class="sp kd">小寶：</span>哎唷，芒果汁滴到你們的書上面了啦！</p>
+      <p><span class="sp p">爸爸、媽媽：</span>（倒抽一口氣之後壓抑憤怒）小、心、一、點！</p>
+      <p class="n">小黃點把小寶家弄得亂七八糟，小寶的爸爸媽媽快要生氣了，沒想到，小黃點們還玩不夠。</p>
+      <p><span class="sp y">小黃點們：</span>飛呀～</p>
+      <p class="n">（噴濺聲）</p>
+      <p><span class="sp kd">小寶：</span>（倒抽一口氣）我剛剛打開水彩，不小心噴到牆壁上⋯⋯</p>
+      <p><span class="sp p">爸爸、媽媽：</span>請你自己擦乾淨！</p>
+      <p><span class="sp kd">小寶、眾小孩：</span>嗚啊～～～（爆哭）</p>
+      <p class="n">到處都傳出小朋友的哭聲，原來，不只小寶，其他的小朋友家也被小黃點弄得髒兮兮的，他們花了整下午擦牆壁、擦桌子、擦手、擦臉、擦書、刷牙，忙著把各種黃黃的痕跡擦掉，都沒有時間出去玩了！他們好生氣。</p>
+      <p><span class="sp kd">小寶、眾小孩：</span>我最討厭黃色了！哼！</p>
+      <p class="n">聽到小朋友們這麼說，全部的小黃點都嚇了一跳！</p>
+      <p><span class="sp y">小黃點們：</span>什麼！不要這樣說嘛～～</p>
+      <p class="n">全部的小黃點突然飛得很高很高、很遠很遠，回到了色彩王國。國王就在那裡等著他們。</p>
+      <p><span class="sp kg">國王：</span>小黃點，你們好呀。</p>
+      <p><span class="sp y">眾小黃點：</span>⋯⋯國王你好呀。</p>
+      <p><span class="sp kg">國王：</span>你們下去，玩得開心嗎？</p>
+      <p class="n">小黃點們你看我、我看你，難過地哭了起來。</p>
+      <p><span class="sp y">小黃點A：</span>小朋友們討厭黃色！</p>
+      <p><span class="sp y">小黃點B：</span>大人看到我們也一直嘆氣！</p>
+      <p><span class="sp y">小黃點C：</span>他們花了一個下午一直洗、一直刷，要把我們趕走！</p>
+      <p><span class="sp y">眾小黃點：</span>我們⋯⋯是不是不該再下去玩了？大家都不喜歡黃色</p>
+      <p class="n">國王說</p>
+      <p><span class="sp kg">國王：</span>怎麼會呢？你看～</p>
+      <p class="n">國王的手一揮，好多小黃點就跳到稻田裡，原本綠油油的稻田，突然變成金黃色的。農夫看著金黃色的稻田，笑著說。</p>
+      <p><span class="sp x">農夫：</span>今年的收成一定很不錯！</p>
+      <p class="n">國王的手又揮，好多小黃點跳到樹上，讓一整條街的樹葉都變黃了。路上的人們都停下來拍照。</p>
+      <p><span class="sp x">眾路人：</span>好漂亮喔～</p>
+      <p class="n">最後，國王的手輕輕揮，小黃點們飛到小燈裡面。天黑了，小寶躺在床上。</p>
+      <p><span class="sp kd">小寶：</span>爸爸媽媽晚安。</p>
+      <p><span class="sp p">爸爸媽媽：</span>小寶晚安。</p>
+      <p class="n">爸爸媽媽替小寶開了小燈。</p>
+      <p><span class="sp kd">小寶：</span>黃黃的燈光，看起來也不錯嘛⋯⋯（呵欠）</p>
+      <p class="n">小黃點們在小燈裡，陪著小寶，慢慢地睡著了。</p>
+      <p class="n">這就是今天的故事《小黃點出任務》，感謝羱璁的提供喔！</p>
+    </div>
+  </details>
+
+  <footer>
+    <div class="logo">一起說故事</div>
+    本頁內容僅供合作繪者參考，請勿轉載或公開分享。<br>
+    © 一暝大一寸有限公司
+  </footer>
+
+</div>
+</body>
+</html>
